@@ -70,6 +70,82 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
 }
 
-body {
+* {
 	font-family: "Rubik", sans-serif;
+}
+
+.content-container {
+	width: 100%;
+	max-width: 1310px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.header {
+	background: #34D186;
+}
+.header__ad {
+	position: relative;
+	padding: 15px 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	gap: 0;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	background: url("../img/wheel.png") no-repeat;
+	background-size: 367px 367px;
+	background-position: right 12.21% top -51px;
+	overflow: hidden;
+}
+.header__ad-text-btn {
+	position: relative;
+	z-index: 2;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	gap: 42px;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+}
+.header__ad-text-btn p {
+	font-size: 26px;
+	line-height: 36px;
+	font-weight: 500;
+	color: #FFF;
+}
+.header__ad-text-btn a {
+	display: inline-block;
+	padding: 11px 23px 12px 22px;
+	font-size: 14px;
+	line-height: 1;
+	font-weight: 600;
+	color: #FFF;
+	border-radius: 8px;
+	background: #313131;
+}
+.header__ad-close {
+	position: relative;
+	z-index: 2;
+	width: 24px;
+	height: 24px;
+	background: url("../img/close.svg") no-repeat;
+	background-size: 100% 100%;
+	cursor: pointer;
 }

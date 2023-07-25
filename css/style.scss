@@ -3,6 +3,88 @@
 
 
 
-body {
+// Mixins
+@mixin font ($fs, $lh) {
+	font-size: $fs;
+	line-height: $lh;
+}
+
+@mixin flex ($f, $fd, $g, $ai, $jc) {
+	display: $f;
+	flex-direction: $fd;
+	gap: $g;
+	align-items: $ai;
+	justify-content: $jc;
+}
+
+
+
+* {
 	font-family: 'Rubik', sans-serif;
+}
+
+
+
+.content-container {
+	width: 100%;
+	max-width: calc(1280px + 30px); // 30px = padding left + padding right
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+
+
+.header {
+	background: #34D186;
+
+	&__ad {
+		position: relative;
+
+		padding: 15px 0;
+		@include flex(flex, row, 0, center, space-between);
+		
+		background: url("../img/wheel.png") no-repeat;
+		background-size: 367px 367px;
+		background-position: right 12.21% top -51px;
+
+		overflow: hidden;
+
+		&-text-btn {
+			position: relative;
+			z-index: 2;
+
+			@include flex(inline-flex, row, 42px, center, flex-start);
+
+			p {
+				@include font(26px, 36px);
+				font-weight: 500;
+				color: #FFF;
+			}
+
+			a {
+				display: inline-block;
+				padding: 11px 23px 12px 22px;
+
+				@include font(14px, 1);
+				font-weight: 600;
+				color: #FFF;
+
+				border-radius: 8px;
+				background: #313131;
+			}
+		}
+
+		&-close {
+			position: relative;
+			z-index: 2;
+
+			width: 24px;
+			height: 24px;
+
+			background: url("../img/close.svg") no-repeat;
+			background-size: 100% 100%;
+
+			cursor: pointer;
+		}
+	}
 }
