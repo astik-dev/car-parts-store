@@ -81,10 +81,10 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 0 15px;
 }
 
-.header {
+.header__ad {
 	background: #34D186;
 }
-.header__ad {
+.header__ad .content-container {
 	position: relative;
 	padding: 15px 0;
 	display: -webkit-box;
@@ -151,12 +151,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 1199.5px) {
-	.header__ad {
+	.header__ad .content-container {
 		background-position: right 7% top -51px;
 	}
 }
 @media (max-width: 1099.5px) {
-	.header__ad {
+	.header__ad .content-container {
 		background-size: 300px 300px;
 		background-position: right 5% top -41px;
 	}
