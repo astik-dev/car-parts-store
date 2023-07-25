@@ -149,3 +149,23 @@ h1, h2, h3, h4, h5, h6 {
 	background-size: 100% 100%;
 	cursor: pointer;
 }
+
+@media (max-width: 1199.5px) {
+	.header__ad {
+		background-position: right 7% top -51px;
+	}
+}
+@media (max-width: 1099.5px) {
+	.header__ad {
+		background-size: 300px 300px;
+		background-position: right 5% top -41px;
+	}
+	.header__ad-text-btn {
+		gap: 25px;
+	}
+}
+@media (max-width: 991.5px) {
+	.header__ad {
+		display: none;
+	}
+}
