@@ -1578,3 +1578,68 @@ h1, h2 {
 		}
 	}
 }
+
+
+
+.pt-pb-80 {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+
+
+.contact-us {
+
+	&__container {
+		position: relative;
+
+		padding: 39px 48px 46px 48px;
+
+		border-radius: 16px;
+		background: radial-gradient(822.23% 104.73% at 69.34% -0.00%, #5EF8AE 0%, #32BB78 100%);
+
+		h2, p, a {
+			position: relative;
+			z-index: 2;
+		}
+
+		h2 {
+			max-width: 470px;
+
+			color: #FFF;
+		}
+
+		p {
+			max-width: 470px;
+			margin: 14px 0 36px 0;
+
+			@include font(18px, 21px);
+			color: #FFF;
+		}
+
+		a {
+			display: inline-block;
+			width: 280px;
+			padding: 15px 15px 16px 15px;
+
+			@include font(16px, 19px);
+			color: #FFF;
+			font-weight: 500;
+			text-align: center;
+
+			border-radius: 10px;
+			background: #313131;
+		}
+
+		img {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			z-index: 1;
+
+			width: 62.5%;
+
+			pointer-events: none;
+		}
+	}
+}

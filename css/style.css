@@ -1425,3 +1425,49 @@ h1, h2 {
 		line-height: 18px;
 	}
 }
+.pt-pb-80 {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.contact-us__container {
+	position: relative;
+	padding: 39px 48px 46px 48px;
+	border-radius: 16px;
+	background: radial-gradient(822.23% 104.73% at 69.34% 0%, #5EF8AE 0%, #32BB78 100%);
+}
+.contact-us__container h2, .contact-us__container p, .contact-us__container a {
+	position: relative;
+	z-index: 2;
+}
+.contact-us__container h2 {
+	max-width: 470px;
+	color: #FFF;
+}
+.contact-us__container p {
+	max-width: 470px;
+	margin: 14px 0 36px 0;
+	font-size: 18px;
+	line-height: 21px;
+	color: #FFF;
+}
+.contact-us__container a {
+	display: inline-block;
+	width: 280px;
+	padding: 15px 15px 16px 15px;
+	font-size: 16px;
+	line-height: 19px;
+	color: #FFF;
+	font-weight: 500;
+	text-align: center;
+	border-radius: 10px;
+	background: #313131;
+}
+.contact-us__container img {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+	width: 62.5%;
+	pointer-events: none;
+}
