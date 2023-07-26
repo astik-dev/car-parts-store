@@ -33,6 +33,14 @@
 
 
 
+h1, h2 {
+	@include font(40px, 47px);
+	color: #313131;
+	font-weight: 500;
+}
+
+
+
 .content-container {
 	width: 100%;
 	max-width: calc(1280px + 30px); // 30px = padding left + padding right
@@ -729,3 +737,318 @@
 		}
 	}
 }
+
+
+
+.main {}
+
+
+
+.car-choice {
+
+	&__container {
+		padding: 70px 0;
+
+		> h1 {
+
+		}
+
+		> p {
+			margin: 16px 0 50px 0;
+
+			@include font(18px, 21px);
+			color: #313131;
+		}
+	}
+	
+	&__tabs1 {
+
+		&-btns {
+			@include flex(inline-flex, row, 11px, center, flex-start);
+
+			button {
+				$anim: all 0.15s ease;
+
+				width: 256px;
+				padding: 15px 0;
+				@include flex(inline-flex, row, 12px, center, center);
+			
+				border-radius: 10px;
+				background: #F4F4F4;
+
+				transition: $anim;
+
+				svg {
+					width: 20px;
+					height: 20px;
+
+					path {
+						transition: $anim;
+					}
+				}
+
+				span {
+					@include font(16px, 19px);
+					color: #313131;
+					font-weight: 500;
+
+					transition: $anim;
+				}
+			}
+
+			button:nth-child(1) {
+				svg {
+
+					path {
+						fill: #313131;
+					}
+				}
+			}
+
+			button:nth-child(2),
+			button:nth-child(3) {
+				svg {
+
+					path {
+						stroke: #313131;
+					}
+				}
+			}
+
+			button.active,
+			button:hover {
+				background: #34D186;
+
+				span {
+					color: #FFF;
+				}
+			}
+
+			button:nth-child(1).active,
+			button:nth-child(1):hover {
+				svg {
+
+					path {
+						fill: #FFFFFF;
+					}
+				}
+			}
+
+			button:nth-child(2).active,
+			button:nth-child(2):hover,
+			button:nth-child(3).active,
+			button:nth-child(3):hover {
+				svg {
+
+					path {
+						stroke: #FFFFFF;
+					}
+				}
+			}
+		}
+
+		&-content {
+			display: none;
+		}
+		&-content.open {
+			display: block;
+		}
+	}
+		
+	&__tabs2 {
+		padding: 10px 0 0 0;
+
+		&-btns {
+			@include flex(inline-flex, row, 10px, center, flex-start);
+
+			button {
+				$anim: all 0.15s ease;
+
+				position: relative;
+
+				width: 190px;
+				padding: 15px 44px 15px 20px;
+
+				@include font(16px, 19px);
+				color: #FFF;
+				font-weight: 500;
+				text-align: left;
+
+				border-radius: 10px;
+				background: #313131;
+
+				&:after {
+					content: "";
+
+					position: absolute;
+					top: 15px;
+					right: 16px;
+
+					display: inline-block;
+					width: 20px;
+					height: 20px;
+
+					background: url("../img/arrow_white.svg") no-repeat;
+					background-size: 100% 100%;
+				}
+			}
+
+			button:disabled {
+				color: #989898;
+
+				background: #F4F4F4;
+
+				cursor: not-allowed;
+
+				&:after {
+					background: url("../img/arrow_grey.svg") no-repeat;
+					background-size: 100% 100%;
+				}
+			}
+		}
+
+		&-content {
+			margin-top: 10px;
+			
+			filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0.14));
+			background: #F4F4F4;
+
+			button {
+				padding: 13px 20px 20px 21px;
+
+				@include font(14px, 20px);
+				color: #313131;
+				text-align: left;
+
+				border-right: 1px solid #DCDCDC;
+				border-bottom: 1px solid #DCDCDC;
+
+				background: #fff;
+			}
+
+			button:hover {
+				color: #34D186;
+				text-decoration: underline;
+
+				background: #F4F4F4;
+			}
+
+			button:disabled {
+				color: #DCDCDC;
+
+				background: #F4F4F4;
+
+				cursor: not-allowed;
+			}
+
+			&_table6 {
+				@include grid(grid, repeat(auto-fill, minmax(190px, 1fr)), 0, stretch, stretch);
+			}
+
+			&_engine {
+
+				div {
+					@include flex(flex, row, 0, center, flex-start);
+
+					p {
+						padding: 13px 20px 20px 21px;
+						width: 150px;
+
+						@include font(14px, 20px);
+						color: #313131;
+
+						background: #fff;
+						border-right: 1px solid #DCDCDC;
+						border-bottom: 1px solid #DCDCDC;
+
+						cursor: not-allowed;
+					}
+
+					button {
+						width: 90px;
+					}
+				}
+			}
+
+			&_mod {
+				@include grid(grid, repeat(auto-fill, minmax(220px, 1fr)), 0, stretch, stretch);
+
+				button {
+					position: relative;
+
+					p {
+						@include font(14px, 20px);
+						font-weight: 500;
+					}
+
+					span {
+						display: block;
+						
+						@include font(12px, 20px);
+					}
+
+					div {
+						position: absolute;
+						top: 100%;
+						left: 0;
+
+						display: none;
+						width: 100%;
+						padding: 13px 20px 20px 21px;
+
+						background: #F4F4F4;
+					}
+				}
+
+				button:hover {
+
+					text-decoration: none;
+
+					div {
+						display: block;
+					}
+				}
+			}
+		}
+	}
+	
+	&__v-n {
+		padding: 20px 0 0 0;
+
+		p {
+			display: inline-block;
+			margin-right: 30px;
+
+			@include font(18px, 21px);
+			color: #313131;
+		}
+
+		&-input {
+			@include flex(inline-flex, row, 0, center, flex-start);
+
+			input {
+				width: 290px;
+				padding: 15px 17px;
+
+				@include font(16px, 20px);
+				color: #313131;
+				text-align: center;
+
+				border-radius: 10px 0 0 10px;
+				background: #F4F4F4;
+			}
+
+			button {
+				padding: 15px;
+
+				@include font(16px, 20px);
+				color: #fff;
+
+				border-radius: 0 10px 10px 0;
+				background: #34D186;
+			}
+		}
+	}
+}
+	
+	
