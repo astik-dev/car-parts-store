@@ -12,6 +12,8 @@
 
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/><!-- SwiperJS -->
+
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -336,8 +338,41 @@
 				</div>
 			</section>
 
+			<div class="swiper swiper-fullwidth">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide swiper-fullwidth__slide">
+						<div class="swiper-fullwidth__image">
+							<img src="img/swiper_image_1.jpg" alt="Swiper image">
+						</div>
+						<div class="swiper-fullwidth__slide-container">
+							<p class="swiper-fullwidth__title">Наш каталог автозапчастин налічує <span>>12 500 000</span> одиниць</p>
+							<p class="swiper-fullwidth__text">у більш ніж <span>800</span> категоріях</p>
+						</div>
+					</div>
+					<div class="swiper-slide swiper-fullwidth__slide">
+						<div class="swiper-fullwidth__image">
+							<img src="img/swiper_image_2.jpg" alt="Swiper image">
+						</div>
+						<div class="swiper-fullwidth__slide-container">
+							<p class="swiper-fullwidth__title">Lorem ipsum dolor sit amet <span>consectetur</span> adipisicing elit</p>
+							<p class="swiper-fullwidth__text">у більш ніж <span>800</span> категоріях</p>
+						</div>	
+					</div>
+				</div>
+				<button class="swiper-fullwidth__nav swiper-fullwidth__nav_prev">
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M11.0001 6L7.00012 10L11.0001 14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+				</button>
+				<button class="swiper-fullwidth__nav swiper-fullwidth__nav_next">
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M8.99988 6L12.9999 10L8.99988 14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+				</button>
+			</div>				
+
 		</main>
 
+		<!-- SwiperJS -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+		<script src="js/swiper-fullwidth.js"></script>
+		
 		<script src="js/script.js"></script>
 	</body>
 </html>

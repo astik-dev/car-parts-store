@@ -757,6 +757,8 @@ h1, h2 {
 
 
 .car-choice {
+	position: relative;
+	z-index: 5;
 
 	&__container {
 		padding: 70px 0;
@@ -1202,6 +1204,120 @@ h1, h2 {
 			p {
 				@include font(16px, 18px);
 			}
+		}
+	}
+}
+
+
+
+.swiper-fullwidth {
+	height: 496px;
+
+	&__slide {
+		position: relative;
+
+		&-container {
+			position: relative;
+			z-index: 2;
+
+			max-width: 1018px;
+			width: 100%;
+			height: 100%;
+			margin: 0 auto;
+			@include flex(flex, column, 28px, flex-start, center);
+
+			p {
+
+				span {
+					color: #34D186;
+				}
+			}
+		}
+	}
+
+	&__image {
+		position: absolute;
+		z-index: 1;
+
+		height: 100%;
+		width: 100%;
+
+		img {
+			position: relative;
+			z-index: 1;
+
+			height: 100%;
+			width: 100%;
+
+			object-fit: cover;
+		}
+
+		&:after {
+			content: "";
+
+			position: absolute;
+			z-index: 2;
+			top: 0;
+			left: 0;
+
+			display: block;
+			height: 100%;
+			width: 100%;
+
+			background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%);
+		}
+	}
+
+	&__title {
+		max-width: 750px;
+
+		@include font(60px, 71px);
+		color: #FFF;
+		font-weight: 500;
+	}
+
+	&__text {
+		max-width: 750px;
+
+		@include font(30px, 36px);
+		color: #FFF;
+	}
+
+	&__nav {
+		position: absolute;
+		z-index: 2;
+		top: calc(50% - 25px);
+
+		width: 50px;
+		height: 50px;
+		padding: 15px;
+
+		border-radius: 100px;
+		background: rgba(0, 0, 0, 0.50);
+
+		transition: all 0.2s ease;
+
+		&_prev {
+			left: calc((100% - 1280px) / 2);
+		}
+
+		&_next {
+			right: calc((100% - 1280px) / 2);
+		}
+	}
+	&__nav.swiper-button-disabled {
+		background: rgba(0, 0, 0, 0.50) !important;
+
+		cursor: auto;
+	}		
+}
+
+@media (hover: hover) {
+
+	.swiper-fullwidth {
+
+		&__nav:hover {
+			background: rgba(52, 209, 134, 0.70);
 		}
 	}
 }

@@ -740,6 +740,10 @@ h1, h2 {
 		top: 10px;
 	}
 }
+.car-choice {
+	position: relative;
+	z-index: 5;
+}
 .car-choice__container {
 	padding: 70px 0;
 }
@@ -1115,5 +1119,103 @@ h1, h2 {
 	.car-choice__v-n p {
 		font-size: 16px;
 		line-height: 18px;
+	}
+}
+.swiper-fullwidth {
+	height: 496px;
+}
+.swiper-fullwidth__slide {
+	position: relative;
+}
+.swiper-fullwidth__slide-container {
+	position: relative;
+	z-index: 2;
+	max-width: 1018px;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	gap: 28px;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+.swiper-fullwidth__slide-container p span {
+	color: #34D186;
+}
+.swiper-fullwidth__image {
+	position: absolute;
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+}
+.swiper-fullwidth__image img {
+	position: relative;
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	-o-object-fit: cover;
+	   object-fit: cover;
+}
+.swiper-fullwidth__image:after {
+	content: "";
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	display: block;
+	height: 100%;
+	width: 100%;
+	background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+.swiper-fullwidth__title {
+	max-width: 750px;
+	font-size: 60px;
+	line-height: 71px;
+	color: #FFF;
+	font-weight: 500;
+}
+.swiper-fullwidth__text {
+	max-width: 750px;
+	font-size: 30px;
+	line-height: 36px;
+	color: #FFF;
+}
+.swiper-fullwidth__nav {
+	position: absolute;
+	z-index: 2;
+	top: calc(50% - 25px);
+	width: 50px;
+	height: 50px;
+	padding: 15px;
+	border-radius: 100px;
+	background: rgba(0, 0, 0, 0.5);
+	-webkit-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+.swiper-fullwidth__nav_prev {
+	left: calc((100% - 1280px) / 2);
+}
+.swiper-fullwidth__nav_next {
+	right: calc((100% - 1280px) / 2);
+}
+.swiper-fullwidth__nav.swiper-button-disabled {
+	background: rgba(0, 0, 0, 0.5) !important;
+	cursor: auto;
+}
+
+@media (hover: hover) {
+	.swiper-fullwidth__nav:hover {
+		background: rgba(52, 209, 134, 0.7);
 	}
 }
