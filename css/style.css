@@ -88,6 +88,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header__ad {
 	background: #34D186;
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-rows: 1fr;
+	grid-template-rows: 1fr;
+	-webkit-transition: grid-template-rows 0.2s ease-out;
+	transition: grid-template-rows 0.2s ease-out;
+	transition: grid-template-rows 0.2s ease-out, -ms-grid-rows 0.2s ease-out;
+}
+.header__ad .content-container {
+	overflow: hidden;
 }
 .header__ad-container {
 	position: relative;

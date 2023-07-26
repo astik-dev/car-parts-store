@@ -77,6 +77,10 @@ function openHeaderBottomSubMenu(elem) {
 	elem.parentNode.classList.toggle("open");
 }
 
+function closeHeaderAd() {
+	dqs(".header__ad").style.gridTemplateRows = "0fr";
+}
+
 
 
 // Event Listeners
