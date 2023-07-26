@@ -1220,7 +1220,8 @@ h1, h2 {
 			position: relative;
 			z-index: 2;
 
-			max-width: 1018px;
+			max-width: calc(1018px + 80px + 80px); // width + padding
+			padding: 0 80px;
 			width: 100%;
 			height: 100%;
 			margin: 0 auto;
@@ -1295,7 +1296,7 @@ h1, h2 {
 		border-radius: 100px;
 		background: rgba(0, 0, 0, 0.50);
 
-		transition: all 0.2s ease;
+		transition: background 0.2s ease;
 
 		&_prev {
 			left: calc((100% - 1280px) / 2);
@@ -1318,6 +1319,115 @@ h1, h2 {
 
 		&__nav:hover {
 			background: rgba(52, 209, 134, 0.70);
+		}
+	}
+}
+
+@media (max-width: 1310px) {
+	.swiper-fullwidth {
+
+		&__nav {
+
+			&_prev {
+				left: 15px;
+			}
+
+			&_next {
+				right: 15px;
+			}
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.swiper-fullwidth {
+		height: 400px;
+
+		&__slide {
+
+			&-container {
+				gap: 22px;
+			}
+		}
+
+		&__title {
+			max-width: 650px;
+
+			@include font(50px, 60px);
+		}
+
+		&__text {
+			max-width: 650px;
+
+			@include font(26px, 31px);
+		}
+	}
+}
+
+@media (max-width: 767.5px) {
+	.swiper-fullwidth {
+		height: 300px;
+
+		&__slide {
+
+			&-container {
+				gap: 16px;
+			}
+		}
+
+		&__title {
+			max-width: 470px;
+
+			@include font(36px, 43px);
+		}
+
+		&__text {
+			max-width: 470px;
+
+			@include font(20px, 24px);
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.swiper-fullwidth {
+
+		&__slide {
+
+			&-container {
+				gap: 12px;
+				margin: 0;
+
+				padding: 10px 30px 60px 30px;
+
+				justify-content: flex-start;
+				justify-content: center;
+			}
+		}
+
+		&__title {
+			max-width: 370px;
+
+			@include font(29px, 37px);
+		}
+
+		&__text {
+			max-width: 370px;
+
+			@include font(17px, 21px);
+		}
+
+		&__nav {
+
+			top: calc(100% - 50px - 10px);
+
+			&_prev {
+				left: 10px;
+			}
+
+			&_next {
+				right: 10px;
+			}
 		}
 	}
 }
