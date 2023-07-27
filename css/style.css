@@ -1375,6 +1375,8 @@ h1, h2 {
 	color: #FFF;
 	text-align: center;
 	font-weight: 500;
+	text-decoration: underline;
+	text-decoration-color: transparent;
 	-webkit-transform: translate(-50%, 0);
 	        transform: translate(-50%, 0);
 }
@@ -1410,7 +1412,7 @@ h1, h2 {
 
 @media (hover: hover) {
 	.category-card:hover p {
-		text-decoration: underline;
+		text-decoration-color: #FFF;
 	}
 	.category-card:hover:before {
 		opacity: 1;
@@ -1539,5 +1541,95 @@ h1, h2 {
 		width: 100%;
 		max-width: 300px;
 		margin: 15px auto 0 auto;
+	}
+}
+.bg_F4F4F4 {
+	background: #F4F4F4;
+}
+
+.pb-78 {
+	padding-bottom: 78px;
+}
+
+.car-parts-cards-grid {
+	display: -ms-grid;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+	gap: 25px;
+	-webkit-box-align: stretch;
+	    -ms-flex-align: stretch;
+	        align-items: stretch;
+	-webkit-box-pack: stretch;
+	    -ms-flex-pack: stretch;
+	        justify-content: stretch;
+}
+
+.car-parts-card {
+	position: relative;
+	height: 90px;
+	padding: 0 35px 0 19px;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	gap: 20px;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+	border-radius: 12px;
+	-webkit-transition: all 0.15s ease;
+	transition: all 0.15s ease;
+}
+.car-parts-card img {
+	width: 40px;
+	height: 40px;
+	-o-object-fit: contain;
+	   object-fit: contain;
+}
+.car-parts-card__txt-container {
+	color: #313131;
+	text-decoration: underline;
+	text-decoration-color: transparent;
+	-webkit-transition: all 0.15s ease;
+	transition: all 0.15s ease;
+}
+.car-parts-card__text {
+	font-size: 14px;
+	line-height: 22px;
+}
+.car-parts-card__car-name {
+	font-size: 16px;
+	line-height: 22px;
+	text-transform: uppercase;
+}
+.car-parts-card:after {
+	content: "";
+	position: absolute;
+	top: 35px;
+	right: 15px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url("../img/arrow_grey.svg") no-repeat;
+	background-size: 100% 100%;
+	-webkit-transform: rotate(-90deg);
+	        transform: rotate(-90deg);
+}
+
+@media (hover: hover) {
+	.car-parts-card:hover {
+		background: #FFF;
+		-webkit-box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.14);
+		        box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.14);
+	}
+	.car-parts-card:hover .car-parts-card__txt-container {
+		color: #34D186;
+		text-decoration-color: #34D186;
 	}
 }
