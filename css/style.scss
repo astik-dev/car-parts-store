@@ -39,6 +39,15 @@ h1, h2 {
 	font-weight: 500;
 }
 
+h3 {
+	@include font(30px, 36px);
+	font-weight: 500;
+}
+
+h4 {
+	@include font(26px, 31px);
+}
+
 @media (max-width: 767.5px) {
 	h1, h2 {
 		@include font(32px, 39px);
@@ -2105,6 +2114,66 @@ h1, h2 {
 
 		&__text {
 			@include font(16px, 20px);
+		}
+	}
+}
+
+
+
+.text {
+
+	p, li {
+		@include font(14px, 22px);
+	}
+
+	ol {
+
+		li {
+			list-style-position: inside;
+		}
+	}
+
+	ul {
+
+		li {
+
+			&:before {
+				content: "· ";
+				font-weight: 700;
+			}
+		}
+	}
+
+	a {
+		color: #34D186;
+	}
+
+	.links_separator {
+		a {
+
+			&:after {
+				content: "|";
+				padding-left: 4px;
+			}
+		}
+	}
+
+	.links_clr989898 {
+		a {
+			color: #989898;
+		}
+	}
+
+	&_clr696969 {
+		color: #696969;
+	}
+}
+
+@media (hover:hover) {
+	.text {
+
+		a:hover {
+			text-decoration: underline;
 		}
 	}
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
 	padding: 0;
 	margin: 0;
@@ -79,6 +80,17 @@ h1, h2 {
 	line-height: 47px;
 	color: #313131;
 	font-weight: 500;
+}
+
+h3 {
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: 500;
+}
+
+h4 {
+	font-size: 26px;
+	line-height: 31px;
 }
 
 @media (max-width: 767.5px) {
@@ -1884,5 +1896,35 @@ h1, h2 {
 	.helpful-info-card__text {
 		font-size: 16px;
 		line-height: 20px;
+	}
+}
+.text p, .text li {
+	font-size: 14px;
+	line-height: 22px;
+}
+.text ol li {
+	list-style-position: inside;
+}
+.text ul li:before {
+	content: "· ";
+	font-weight: 700;
+}
+.text a {
+	color: #34D186;
+}
+.text .links_separator a:after {
+	content: "|";
+	padding-left: 4px;
+}
+.text .links_clr989898 a {
+	color: #989898;
+}
+.text_clr696969 {
+	color: #696969;
+}
+
+@media (hover: hover) {
+	.text a:hover {
+		text-decoration: underline;
 	}
 }
