@@ -1551,10 +1551,25 @@ h1, h2 {
 	padding-bottom: 78px;
 }
 
+@media (max-width: 991.5px) {
+	.pb-78 {
+		padding-bottom: 59px;
+	}
+}
+@media (max-width: 767.5px) {
+	.pb-78 {
+		padding-bottom: 47px;
+	}
+}
+@media (max-width: 575.5px) {
+	.pb-78 {
+		padding-bottom: 34px;
+	}
+}
 .car-parts-cards-grid {
 	display: -ms-grid;
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
 	gap: 25px;
 	-webkit-box-align: stretch;
 	    -ms-flex-align: stretch;
@@ -1564,6 +1579,16 @@ h1, h2 {
 	        justify-content: stretch;
 }
 
+@media (max-width: 510px) {
+	.car-parts-cards-grid {
+		-ms-grid-columns: 260px;
+		grid-template-columns: 260px;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		gap: 0;
+	}
+}
 .car-parts-card {
 	position: relative;
 	height: 90px;

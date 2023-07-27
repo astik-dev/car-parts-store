@@ -1751,10 +1751,36 @@ h1, h2 {
 	padding-bottom: 78px;
 }
 
+@media (max-width: 991.5px) {
+	.pb-78 {
+		padding-bottom: 59px;
+	}
+}
+
+@media (max-width: 767.5px) {
+	.pb-78 {
+		padding-bottom: 47px;
+	}
+}
+
+@media (max-width: 575.5px) {
+	.pb-78 {
+		padding-bottom: 34px;
+	}
+}
+
 
 
 .car-parts-cards-grid {
-	@include grid(grid, repeat(auto-fill, minmax(220px, 1fr)), 25px, stretch, stretch);
+	@include grid(grid, repeat(auto-fill, minmax(230px, 1fr)), 25px, stretch, stretch);
+}
+
+@media (max-width: 510px) {
+	.car-parts-cards-grid {
+		grid-template-columns: 260px;
+		justify-content: center;
+		gap: 0;
+	}
 }
 
 .car-parts-card {
