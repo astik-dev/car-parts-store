@@ -98,11 +98,27 @@ h4 {
 		font-size: 32px;
 		line-height: 39px;
 	}
+	h3 {
+		font-size: 26px;
+		line-height: 31px;
+	}
+	h4 {
+		font-size: 22px;
+		line-height: 26px;
+	}
 }
 @media (max-width: 575.5px) {
 	h1, h2 {
 		font-size: 25px;
 		line-height: 32px;
+	}
+	h3 {
+		font-size: 21px;
+		line-height: 25px;
+	}
+	h4 {
+		font-size: 19px;
+		line-height: 22px;
 	}
 }
 .content-container {
@@ -1916,6 +1932,10 @@ h4 {
 	content: "|";
 	padding-left: 4px;
 }
+.text .links_separator a:last-child:after {
+	content: "";
+	padding-left: 0;
+}
 .text .links_clr989898 a {
 	color: #989898;
 }
@@ -1926,5 +1946,14 @@ h4 {
 @media (hover: hover) {
 	.text a:hover {
 		text-decoration: underline;
+	}
+}
+@media (max-width: 575.5px) {
+	.text p, .text li {
+		font-size: 13px;
+		line-height: 20px;
+	}
+	.text .links_separator a:after {
+		padding-left: 3px;
 	}
 }
