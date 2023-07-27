@@ -2216,3 +2216,135 @@ h4 {
 		}
 	}
 }
+
+
+
+.footer {
+	margin-top: 100px;
+
+	background: #313131;
+
+	&__container {
+		@include grid(grid, 21.4% 18.82% 16.96% 23.99% 18.83%, 0, start, stretch);
+		padding: 62px 0 73px 0;
+	}
+	
+	&__tels {
+
+		&-items {
+			@include flex(flex, column, 20px, flex-start, flex-start);
+
+			a {
+				@include flex(flex, row, 12px, flex-start, flex-start);
+
+				span {
+					@include font(18px, 21px);
+					color: #989898;
+					font-weight: 500;
+				}
+			}
+		}
+	}
+	
+	&__title {
+		margin-bottom: 24px;
+
+		@include font(16px, 19px);
+		color: #FFF;
+		font-weight: 500;
+	}
+	
+	&__time {
+		margin-bottom: 47px;
+
+		p:nth-child(2) {
+			@include font(14px, 15.5px);
+			color: #989898;
+		}
+	}
+	
+	&__links {
+		@include flex(flex, column, 12px, flex-start, flex-start);
+
+		a {
+			@include font(14px, 17px);
+			color: #989898;
+			font-size: 14px;
+		}
+	}
+	
+	&__payment {
+
+		&-items {
+			@include flex(flex, row, 18px 12px, flex-start, flex-start);
+			flex-wrap: wrap;
+			max-width: 190px;
+		}
+	}
+
+	&__logo {
+		width: 113px;
+		height: 96px;
+
+		object-fit: contain;
+	}
+
+	&__copy {
+		margin: 24px 0;
+		@include font(14px, 22px);
+		color: #989898;
+	}
+	
+	&__socials {
+		@include flex(flex, row, 10px, flex-start, flex-start);
+		flex-wrap: wrap;
+
+		a {
+			svg {
+
+				path {
+					fill: #989898;
+
+					transition: all 0.2s ease;
+				}
+			}
+		}
+	}
+}
+
+@media (hover: hover) {
+	.footer {
+
+		&__tels {
+
+			&-items {
+
+				a:hover {
+
+					span {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+
+		&__links {
+
+			a:hover {
+				color: #34D186;
+				text-decoration: underline;
+			}
+		}
+
+		&__socials {
+			a:hover {
+				svg {
+
+					path {
+						fill: #34D186;
+					}
+				}
+			}
+		}
+	}
+}
