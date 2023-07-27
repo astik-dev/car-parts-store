@@ -2283,10 +2283,7 @@ h4 {
 	}
 
 	&__logo {
-		width: 113px;
 		height: 96px;
-
-		object-fit: contain;
 	}
 
 	&__copy {
@@ -2348,3 +2345,150 @@ h4 {
 		}
 	}
 }
+
+@media (max-width: 991.5px) {
+	.footer {
+		margin-top: 80px;
+
+		&__container {
+			padding: 50px 0 60px 0;
+			grid-template-columns: minmax(189px, 1fr) 1fr 1fr 1fr;
+			gap: 15px;
+		}
+
+		&__payment {
+			grid-column: 2 / 4;
+			grid-row: 2 / 3;
+		}
+	}
+}
+
+@media (max-width: 767.5px) {
+	.footer {
+		margin-top: 60px;
+
+		&__container {
+			padding: 40px 0 50px 0;
+			grid-template-columns: minmax(165px, 1fr) 1fr 1fr;
+			gap: 35px 15px;
+		}
+
+		&__tels {
+
+			&-items {
+				gap: 14px;
+
+				a {
+					align-items: center;
+
+					span {
+						@include font(16px, 19px);
+					}
+				}
+			}
+		}
+
+		&__title {
+			margin-bottom: 20px;
+		}
+
+		&__time {
+			margin-bottom: 35px;
+		}
+
+		&__clients {
+			grid-column: 2 / 3;
+			grid-row: 2 / 3;
+		}
+
+		&__payment {
+			grid-column: 1 / 2;
+			grid-row: 2 / 3;
+		}
+
+		&__logo-copy-socials {
+			grid-column: 3 / 4;
+			grid-row: 1 / 2;
+		}
+
+		&__logo {
+			height: 70px;
+		}
+	}
+}
+
+@media (max-width: 575.5px) {
+	.footer {
+		margin-top: 40px;
+
+		&__container {
+			grid-template-columns: 1fr;
+			justify-items: center;
+			gap: 40px;
+
+			text-align: center;
+		}
+
+		&__tels {
+
+			&-items {
+				align-items: center;
+
+				a {
+					align-items: flex-start;
+
+					span {
+						@include font(18px, 21px);
+					}
+				}
+			}
+		}
+
+		&__time {
+			margin-bottom: 40px;
+		}
+
+		&__links {
+			align-items: center;
+		}
+
+		&__payment {
+
+			&-items {
+				max-width: none;
+				justify-content: center;
+			}
+		}
+
+		&__logo {
+			height: 96px;
+		}
+
+		&__socials {
+			justify-content: center;
+		}
+
+		&__logo-copy-socials {
+			padding-top: 20px;
+		}
+
+		&__clients,
+		&__payment,
+		&__logo-copy-socials {
+			grid-column: auto;
+			grid-row: auto;
+		}
+	}
+}
+/*
+@media (max-width: 767.5px) {
+	.p_18-21 {
+		@include font(17px, 19px);
+	}
+}
+
+@media (max-width: 575.5px) {
+	.p_18-21 {
+		@include font(16px, 18px);
+	}
+}*/
