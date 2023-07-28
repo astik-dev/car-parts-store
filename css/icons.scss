@@ -1,17 +1,50 @@
-.icon-viber,
-.icon-vodafone,
-.icon-lifecell {
+.icon {
+
+	&-viber {
+		background: url("../img/viber.svg");
+	}
+	&-vodafone {
+		background: url("../img/vodafone.svg");
+	}
+	&-lifecell {
+		background: url("../img/lifecell.svg");
+	}
+
+
+	&-visa {
+		width: 69px;
+		height: 20px;
+
+		background: url("../img/visa.svg");
+	}
+	&-mastercard {
+		width: 34px;
+		height: 20px;
+
+		background: url("../img/mastercard.svg");
+	}
+	&-google-pay {
+		width: 53px;
+		height: 20px;
+
+		background: url("../img/google-pay.svg");
+	}
+	&-apple-pay {
+		width: 49px;
+		height: 20px;
+
+		background: url("../img/apple-pay.svg");
+	}
+	&-liqpay {
+		width: 97px;
+		height: 20px;
+
+		background: url("../img/liqpay.svg");
+	}
+}
+.icon {
 	display: inline-block;
-}
-.icon-viber {
-	background: url("../img/viber.svg") no-repeat;
-	background-size: 100% 100%;
-}
-.icon-vodafone {
-	background: url("../img/vodafone.svg") no-repeat;
-	background-size: 100% 100%;
-}
-.icon-lifecell {
-	background: url("../img/lifecell.svg") no-repeat;
-	background-size: 100% 100%;
+
+  	background-size: 100% 100%;
+  	background-repeat: no-repeat;
 }
