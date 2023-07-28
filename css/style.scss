@@ -1,6 +1,9 @@
 // Reset CSS
 @import "reset.scss";
 
+// Icons
+@import "icons.scss";
+
 
 
 // Mixins
@@ -2245,7 +2248,12 @@ h4 {
 			a {
 				@include flex(flex, row, 12px, flex-start, flex-start);
 
-				span {
+				span:nth-child(1) { // icon
+					width: 20px;
+					height: 20px;
+				}
+
+				span:nth-child(2) {
 					@include font(18px, 21px);
 					color: #989898;
 					font-weight: 500;
@@ -2326,7 +2334,7 @@ h4 {
 
 				a:hover {
 
-					span {
+					span:nth-child(2) {
 						text-decoration: underline;
 					}
 				}
@@ -2389,7 +2397,7 @@ h4 {
 				a {
 					align-items: center;
 
-					span {
+					span:nth-child(2) {
 						@include font(16px, 19px);
 					}
 				}
@@ -2445,7 +2453,7 @@ h4 {
 				a {
 					align-items: flex-start;
 
-					span {
+					span:nth-child(2) {
 						@include font(18px, 21px);
 					}
 				}

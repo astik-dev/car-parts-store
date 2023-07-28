@@ -71,6 +71,27 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
 }
 
+.icon-viber,
+.icon-vodafone,
+.icon-lifecell {
+	display: inline-block;
+}
+
+.icon-viber {
+	background: url("../img/viber.svg") no-repeat;
+	background-size: 100% 100%;
+}
+
+.icon-vodafone {
+	background: url("../img/vodafone.svg") no-repeat;
+	background-size: 100% 100%;
+}
+
+.icon-lifecell {
+	background: url("../img/lifecell.svg") no-repeat;
+	background-size: 100% 100%;
+}
+
 * {
 	font-family: "Rubik", sans-serif;
 }
@@ -2019,7 +2040,11 @@ h4 {
 	    -ms-flex-pack: start;
 	        justify-content: flex-start;
 }
-.footer__tels-items a span {
+.footer__tels-items a span:nth-child(1) {
+	width: 20px;
+	height: 20px;
+}
+.footer__tels-items a span:nth-child(2) {
 	font-size: 18px;
 	line-height: 21px;
 	color: #989898;
@@ -2115,7 +2140,7 @@ h4 {
 }
 
 @media (hover: hover) {
-	.footer__tels-items a:hover span {
+	.footer__tels-items a:hover span:nth-child(2) {
 		text-decoration: underline;
 	}
 	.footer__links a:hover {
@@ -2163,7 +2188,7 @@ h4 {
 		    -ms-flex-align: center;
 		        align-items: center;
 	}
-	.footer__tels-items a span {
+	.footer__tels-items a span:nth-child(2) {
 		font-size: 16px;
 		line-height: 19px;
 	}
@@ -2222,7 +2247,7 @@ h4 {
 		    -ms-flex-align: start;
 		        align-items: flex-start;
 	}
-	.footer__tels-items a span {
+	.footer__tels-items a span:nth-child(2) {
 		font-size: 18px;
 		line-height: 21px;
 	}
