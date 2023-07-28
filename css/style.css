@@ -693,7 +693,7 @@ h4 {
 		-webkit-box-direction: normal;
 		    -ms-flex-direction: column;
 		        flex-direction: column;
-		gap: 10px;
+		gap: 8px;
 		-webkit-box-align: stretch;
 		    -ms-flex-align: stretch;
 		        align-items: stretch;
@@ -720,6 +720,8 @@ h4 {
 		        justify-content: stretch;
 		padding: 5px 0;
 		height: auto;
+		font-size: 16px;
+		line-height: 21px;
 		text-align: left;
 	}
 	.header__bottom-menu > ul:nth-child(1) > li.open {
@@ -751,6 +753,15 @@ h4 {
 	}
 	.header__bottom-menu-sub span {
 		margin: 15px 0 11px 0;
+		font-size: 16px;
+		line-height: 21px;
+	}
+	.header__bottom-menu-sub ul {
+		gap: 8px;
+	}
+	.header__bottom-menu-sub ul li a {
+		font-size: 16px;
+		line-height: 19px;
 	}
 }
 @media (max-width: 767.5px) {
