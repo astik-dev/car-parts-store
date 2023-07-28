@@ -105,7 +105,43 @@ h1, h2, h3, h4, h5, h6 {
 	height: 20px;
 	background: url("../img/liqpay.svg");
 }
+.icon-socials {
+	-webkit-filter: grayscale(1);
+	        filter: grayscale(1);
+	-webkit-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+.icon-socials-facebook {
+	background: url("../img/facebook.svg");
+}
+.icon-socials-instagram {
+	background: url("../img/instagram.svg");
+}
+.icon-socials-youtube {
+	background: url("../img/youtube.svg");
+}
+.icon-socials-skype {
+	background: url("../img/skype.svg");
+}
+.icon-socials-telegram {
+	background: url("../img/telegram.svg");
+}
+.icon-socials-viber {
+	background: url("../img/socials-viber.svg");
+}
+.icon-socials-messenger {
+	background: url("../img/messenger.svg");
+}
+.icon-socials-whatsapp {
+	background: url("../img/whatsapp.svg");
+}
 
+@media (hover: hover) {
+	.icon-socials:hover {
+		-webkit-filter: grayscale(0);
+		        filter: grayscale(0);
+	}
+}
 .icon {
 	display: inline-block;
 	background-size: 100% 100%;
@@ -2164,10 +2200,9 @@ h4 {
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
 }
-.footer__socials a svg path {
-	fill: #989898;
-	-webkit-transition: all 0.2s ease;
-	transition: all 0.2s ease;
+.footer__socials a {
+	width: 20px;
+	height: 20px;
 }
 
 @media (hover: hover) {
@@ -2177,9 +2212,6 @@ h4 {
 	.footer__links a:hover {
 		color: #34D186;
 		text-decoration: underline;
-	}
-	.footer__socials a:hover svg path {
-		fill: #34D186;
 	}
 }
 @media (max-width: 991.5px) {

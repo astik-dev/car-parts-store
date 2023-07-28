@@ -2327,14 +2327,8 @@ h4 {
 		flex-wrap: wrap;
 
 		a {
-			svg {
-
-				path {
-					fill: #989898;
-
-					transition: all 0.2s ease;
-				}
-			}
+			width: 20px;
+			height: 20px;
 		}
 	}
 }
@@ -2360,17 +2354,6 @@ h4 {
 			a:hover {
 				color: #34D186;
 				text-decoration: underline;
-			}
-		}
-
-		&__socials {
-			a:hover {
-				svg {
-
-					path {
-						fill: #34D186;
-					}
-				}
 			}
 		}
 	}

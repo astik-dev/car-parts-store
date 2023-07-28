@@ -41,7 +41,48 @@
 
 		background: url("../img/liqpay.svg");
 	}
+
+	
+	&-socials {
+		filter: grayscale(1);
+		transition: all 0.2s ease;
+
+		&-facebook {
+			background: url("../img/facebook.svg");
+		}
+		&-instagram {
+			background: url("../img/instagram.svg");
+		}
+		&-youtube {
+			background: url("../img/youtube.svg");
+		}
+		&-skype {
+			background: url("../img/skype.svg");
+		}
+		&-telegram {
+			background: url("../img/telegram.svg");
+		}
+		&-viber {
+			background: url("../img/socials-viber.svg");
+		}
+		&-messenger {
+			background: url("../img/messenger.svg");
+		}
+		&-whatsapp {
+			background: url("../img/whatsapp.svg");
+		}
+	}
 }
+
+@media (hover: hover) {
+	.icon {
+
+		&-socials:hover {
+			filter: grayscale(0);
+		}
+	}
+}
+
 .icon {
 	display: inline-block;
 
