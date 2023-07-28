@@ -286,23 +286,14 @@ h4 {
 	        justify-content: flex-start;
 }
 .header__top-tels li a {
-	position: relative;
 	display: inline-block;
 	padding-left: 24px;
 	font-size: 12px;
-	line-height: 1;
+	line-height: 16px;
 	color: #FFF;
-}
-.header__top-tels li a:before {
-	content: "";
-	position: absolute;
-	top: -1px;
-	left: 0;
-	display: inline-block;
-	width: 16px;
-	height: 16px;
 	background: url("../img/tel.svg") no-repeat;
-	background-size: 100% 100%;
+	background-size: 16px 16px;
+	background-position: left;
 }
 .header__top-lang {
 	display: -webkit-inline-box;

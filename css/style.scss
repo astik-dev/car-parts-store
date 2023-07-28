@@ -192,28 +192,15 @@ h4 {
 			li {
 
 				a {
-					position: relative;
-
 					display: inline-block;
 					padding-left: 24px;
 
-					@include font(12px, 1);
+					@include font(12px, 16px);
 					color: #FFF;
 
-					&:before {
-						content: "";
-
-						position: absolute;
-						top: -1px;
-						left: 0;
-
-						display: inline-block;
-						width: 16px;
-						height: 16px;
-
-						background: url("../img/tel.svg") no-repeat;
-						background-size: 100% 100%;
-					}
+					background: url("../img/tel.svg") no-repeat;
+					background-size: 16px 16px;
+					background-position: left;
 				}
 			}
 		}
