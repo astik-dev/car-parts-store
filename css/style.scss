@@ -1502,6 +1502,9 @@ h4 {
 		justify-content: center;
 		gap: 15px;
 	}
+	.h2_mw360-center {
+		text-align: center;
+	}
 }
 
 .category-card {
@@ -1806,6 +1809,9 @@ h4 {
 		justify-content: center;
 		gap: 0;
 	}
+	.h2_mw510-center {
+		text-align: center;
+	}
 }
 
 .car-parts-card {
@@ -1884,12 +1890,18 @@ h4 {
 		grid-template-columns: 340px 340px;
 		justify-content: center;
 	}
+	.h2_helpful-center {
+		text-align: center;
+	}
 }
 
 @media (max-width: 767.5px) {
 	.helpful-info-cards-grid {
 		grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
 		gap: 20px; 
+	}
+	.h2_helpful-center {
+		text-align: left;
 	}
 }
 
@@ -1898,6 +1910,9 @@ h4 {
 		grid-template-columns: 200px 200px;
 		gap: 15px; 
 	}
+	.h2_helpful-center {
+		text-align: center;
+	}
 }
 
 @media (max-width: 440px) {
@@ -1905,12 +1920,18 @@ h4 {
 		grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 		gap: 10px; 
 	}
+	.h2_helpful-center {
+		text-align: left;
+	}
 }
 
 @media (max-width: 360px) {
 	.helpful-info-cards-grid {
 		grid-template-columns: 200px;
 		gap: 15px;
+	}
+	.h2_helpful-center {
+		text-align: center;
 	}
 }
 
@@ -2480,15 +2501,3 @@ h4 {
 		}
 	}
 }
-/*
-@media (max-width: 767.5px) {
-	.p_18-21 {
-		@include font(17px, 19px);
-	}
-}
-
-@media (max-width: 575.5px) {
-	.p_18-21 {
-		@include font(16px, 18px);
-	}
-}*/
