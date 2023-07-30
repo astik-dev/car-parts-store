@@ -1255,8 +1255,14 @@ h4 {
 .swiper-fullwidth {
 	height: 496px;
 }
+.swiper-fullwidth .owl-stage-outer,
+.swiper-fullwidth .owl-stage,
+.swiper-fullwidth .owl-item {
+	height: 100%;
+}
 .swiper-fullwidth__slide {
 	position: relative;
+	height: 100%;
 }
 .swiper-fullwidth__slide-container {
 	position: relative;
@@ -1323,39 +1329,42 @@ h4 {
 	line-height: 36px;
 	color: #FFF;
 }
-.swiper-fullwidth__nav {
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
 	position: absolute;
 	z-index: 2;
 	top: calc(50% - 25px);
 	width: 50px;
 	height: 50px;
 	padding: 15px;
+	margin: 0;
 	border-radius: 100px;
 	background: rgba(0, 0, 0, 0.5);
 	-webkit-transition: background 0.2s ease;
 	transition: background 0.2s ease;
 }
-.swiper-fullwidth__nav_prev {
+.owl-carousel .owl-nav button.disabled {
+	opacity: 1 !important;
+	background: rgba(0, 0, 0, 0.5) !important;
+}
+.owl-carousel .owl-nav button.owl-prev {
 	left: calc((100% - 1280px) / 2);
 }
-.swiper-fullwidth__nav_next {
+.owl-carousel .owl-nav button.owl-next {
 	right: calc((100% - 1280px) / 2);
-}
-.swiper-fullwidth__nav.swiper-button-disabled {
-	background: rgba(0, 0, 0, 0.5) !important;
-	cursor: auto;
 }
 
 @media (hover: hover) {
-	.swiper-fullwidth__nav:hover {
+	.owl-theme .owl-nav [class*=owl-]:hover {
 		background: rgba(52, 209, 134, 0.7);
 	}
 }
 @media (max-width: 1310px) {
-	.swiper-fullwidth__nav_prev {
+	.owl-carousel .owl-nav button.owl-prev {
 		left: 15px;
 	}
-	.swiper-fullwidth__nav_next {
+	.owl-carousel .owl-nav button.owl-next {
 		right: 15px;
 	}
 }
@@ -1417,13 +1426,14 @@ h4 {
 		font-size: 17px;
 		line-height: 21px;
 	}
-	.swiper-fullwidth__nav {
+	.owl-carousel .owl-nav button.owl-prev,
+	.owl-carousel .owl-nav button.owl-next {
 		top: calc(100% - 50px - 10px);
 	}
-	.swiper-fullwidth__nav_prev {
+	.owl-carousel .owl-nav button.owl-prev {
 		left: 10px;
 	}
-	.swiper-fullwidth__nav_next {
+	.owl-carousel .owl-nav button.owl-next {
 		right: 10px;
 	}
 }

@@ -1259,8 +1259,15 @@ h4 {
 .swiper-fullwidth {
 	height: 496px;
 
+	.owl-stage-outer,
+	.owl-stage,
+	.owl-item  {
+		height: 100%;
+	}
+
 	&__slide {
 		position: relative;
+		height: 100%;
 
 		&-container {
 			position: relative;
@@ -1329,56 +1336,61 @@ h4 {
 		@include font(30px, 36px);
 		color: #FFF;
 	}
+}
+.owl-carousel {
 
-	&__nav {
-		position: absolute;
-		z-index: 2;
-		top: calc(50% - 25px);
+	.owl-nav {
 
-		width: 50px;
-		height: 50px;
-		padding: 15px;
+		button.owl-prev,
+		button.owl-next {
+			position: absolute;
+			z-index: 2;
+			top: calc(50% - 25px);
 
-		border-radius: 100px;
-		background: rgba(0, 0, 0, 0.50);
+			width: 50px;
+			height: 50px;
+			padding: 15px;
+			margin: 0;
 
-		transition: background 0.2s ease;
+			border-radius: 100px;
+			background: rgba(0, 0, 0, 0.50);
 
-		&_prev {
-			left: calc((100% - 1280px) / 2);
+			transition: background 0.2s ease;
+		}
+		button.disabled {
+			opacity: 1 !important;
+			background: rgba(0, 0, 0, 0.50) !important;
 		}
 
-		&_next {
+		button.owl-prev {
+			left: calc((100% - 1280px) / 2);
+		}
+		button.owl-next {
 			right: calc((100% - 1280px) / 2);
 		}
 	}
-	&__nav.swiper-button-disabled {
-		background: rgba(0, 0, 0, 0.50) !important;
-
-		cursor: auto;
-	}		
 }
 
 @media (hover: hover) {
 
-	.swiper-fullwidth {
+	.owl-theme {
 
-		&__nav:hover {
+		.owl-nav [class*=owl-]:hover {
 			background: rgba(52, 209, 134, 0.70);
 		}
 	}
 }
 
 @media (max-width: 1310px) {
-	.swiper-fullwidth {
+	.owl-carousel {
 
-		&__nav {
+		.owl-nav {
 
-			&_prev {
+			button.owl-prev {
 				left: 15px;
 			}
 
-			&_next {
+			button.owl-next {
 				right: 15px;
 			}
 		}
@@ -1462,16 +1474,21 @@ h4 {
 
 			@include font(17px, 21px);
 		}
+	}
+	.owl-carousel {
 
-		&__nav {
+		.owl-nav {
 
-			top: calc(100% - 50px - 10px);
+			button.owl-prev,
+			button.owl-next {
+				top: calc(100% - 50px - 10px);
+			}
 
-			&_prev {
+			button.owl-prev {
 				left: 10px;
 			}
 
-			&_next {
+			button.owl-next {
 				right: 10px;
 			}
 		}
