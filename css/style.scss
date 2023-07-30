@@ -1369,15 +1369,9 @@ h4 {
 			right: calc((100% - 1280px) / 2);
 		}
 	}
-}
 
-@media (hover: hover) {
-
-	.owl-theme {
-
-		.owl-nav [class*=owl-]:hover {
-			background: rgba(52, 209, 134, 0.70);
-		}
+	.owl-nav [class*=owl-]:hover {
+		background: rgba(52, 209, 134, 0.70);
 	}
 }
 
