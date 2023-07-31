@@ -235,24 +235,13 @@ h4 {
 				display: inline-block;
 				padding-right: 32px;
 
-				@include font(12px, 1);
+				@include font(12px, 24px);
 				color: #FFF;
 				font-weight: 500;
 
-				&:after {
-					content: "";
-
-					position: absolute;
-					top: -6px;
-					right: 0;
-
-					display: inline-block;
-					width: 24px;
-					height: 24px;
-
-					background: url("../img/cart.svg") no-repeat;
-					background-size: 100% 100%;
-				}
+				background: url("../img/cart.svg") no-repeat;
+				background-size: 24px 24px;
+				background-position: right;
 
 				span {
 					color: #989898;

@@ -405,20 +405,12 @@ h4 {
 	display: inline-block;
 	padding-right: 32px;
 	font-size: 12px;
-	line-height: 1;
+	line-height: 24px;
 	color: #FFF;
 	font-weight: 500;
-}
-.header__top-cart a:after {
-	content: "";
-	position: absolute;
-	top: -6px;
-	right: 0;
-	display: inline-block;
-	width: 24px;
-	height: 24px;
 	background: url("../img/cart.svg") no-repeat;
-	background-size: 100% 100%;
+	background-size: 24px 24px;
+	background-position: right;
 }
 .header__top-cart a span {
 	color: #989898;
