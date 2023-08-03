@@ -2273,6 +2273,35 @@ h4 {
 
 
 
+.breadcrumb {
+	padding: 40px 0;
+	@include flex(flex, row, 0px, flex-start, flex-start);
+
+	li {
+		@include font(14px, 20px);
+		color: #696969;
+		font-weight: 300;
+
+		&:after {
+			content: "/";
+
+			display: inline-block;
+			padding: 0 3.56px;
+		}
+
+		&:last-child:after {
+			display: none;
+		}
+
+		a {
+			color: inherit;
+			text-decoration-line: underline;
+		}
+	}
+}
+
+
+
 .footer {
 	margin-top: 100px;
 

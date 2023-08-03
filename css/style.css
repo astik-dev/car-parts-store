@@ -2086,6 +2086,42 @@ h4 {
 		padding-left: 3px;
 	}
 }
+.breadcrumb {
+	padding: 40px 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	gap: 0px;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+}
+.breadcrumb li {
+	font-size: 14px;
+	line-height: 20px;
+	color: #696969;
+	font-weight: 300;
+}
+.breadcrumb li:after {
+	content: "/";
+	display: inline-block;
+	padding: 0 3.56px;
+}
+.breadcrumb li:last-child:after {
+	display: none;
+}
+.breadcrumb li a {
+	color: inherit;
+	text-decoration-line: underline;
+}
+
 .footer {
 	margin-top: 100px;
 	background: #313131;
