@@ -1608,6 +1608,29 @@ h4 {
 		padding-bottom: 35px;
 	}
 }
+.pt-80_pb-70 {
+	padding-top: 80px;
+	padding-bottom: 70px;
+}
+
+@media (max-width: 991.5px) {
+	.pt-80_pb-70 {
+		padding-top: 60px;
+		padding-bottom: 55px;
+	}
+}
+@media (max-width: 767.5px) {
+	.pt-80_pb-70 {
+		padding-top: 48px;
+		padding-bottom: 43px;
+	}
+}
+@media (max-width: 575.5px) {
+	.pt-80_pb-70 {
+		padding-top: 35px;
+		padding-bottom: 30px;
+	}
+}
 .contact-us__container {
 	position: relative;
 	padding: 39px 48px 46px 48px;
@@ -1727,6 +1750,21 @@ h4 {
 	padding-bottom: 113px;
 }
 
+@media (max-width: 991.5px) {
+	.pb-113 {
+		padding-bottom: 80px;
+	}
+}
+@media (max-width: 767.5px) {
+	.pb-113 {
+		padding-bottom: 60px;
+	}
+}
+@media (max-width: 575.5px) {
+	.pb-113 {
+		padding-bottom: 40px;
+	}
+}
 .car-parts-cards-grid {
 	display: -ms-grid;
 	display: grid;
@@ -2164,7 +2202,7 @@ h4 {
 .car-models-grid {
 	display: -ms-grid;
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
 	gap: 27px;
 	-webkit-box-align: stretch;
 	    -ms-flex-align: stretch;
@@ -2222,6 +2260,32 @@ h4 {
 	.car-models-grid a:hover span {
 		color: #34D186;
 		text-decoration-color: #34D186;
+	}
+}
+@media (max-width: 575.5px) {
+	.car-models-grid {
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-ms-grid-columns: 165px 15px 165px;
+		grid-template-columns: 165px 165px;
+		gap: 15px;
+	}
+	.car-models-grid a {
+		min-height: 170px;
+	}
+	.car-models-grid a img {
+		width: 133px;
+		height: 91px;
+	}
+	.h2_mw575-center {
+		text-align: center;
+	}
+}
+@media (max-width: 366px) {
+	.car-models-grid {
+		-ms-grid-columns: 200px;
+		grid-template-columns: 200px;
 	}
 }
 .footer {

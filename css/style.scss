@@ -1690,6 +1690,34 @@ h4 {
 
 
 
+.pt-80_pb-70 {
+	padding-top: 80px;
+	padding-bottom: 70px;
+}
+
+@media (max-width: 991.5px) {
+	.pt-80_pb-70 {
+		padding-top: 60px;
+		padding-bottom: 55px;
+	}
+}
+
+@media (max-width: 767.5px) {
+	.pt-80_pb-70 {
+		padding-top: 48px;
+		padding-bottom: 43px;
+	}
+}
+
+@media (max-width: 575.5px) {
+	.pt-80_pb-70 {
+		padding-top: 35px;
+		padding-bottom: 30px;
+	}
+}
+
+
+
 .contact-us {
 
 	&__container {
@@ -1854,6 +1882,24 @@ h4 {
 
 .pb-113 {
 	padding-bottom: 113px;
+}
+
+@media (max-width: 991.5px) {
+	.pb-113 {
+		padding-bottom: 80px;
+	}
+}
+
+@media (max-width: 767.5px) {
+	.pb-113 {
+		padding-bottom: 60px;
+	}
+}
+
+@media (max-width: 575.5px) {
+	.pb-113 {
+		padding-bottom: 40px;
+	}
 }
 
 
@@ -2348,9 +2394,11 @@ h4 {
 
 
 .car-models-grid {
-	@include grid(grid, repeat(auto-fill, minmax(280px, 1fr)), 27px, stretch, stretch);
+	@include grid(grid, repeat(auto-fill, minmax(240px, 1fr)), 27px, stretch, stretch);
 
 	a {
+		$anim: all 0.3s ease;
+
 		@include flex(inline-flex, column, 10px, center, flex-start);
 		min-height: 220px;
 		padding-top: 18px;
@@ -2358,7 +2406,7 @@ h4 {
 		border-radius: 16px;
 		background: #FFF;
 
-		transition: all 0.3s ease;
+		transition: $anim;
 
 		img {
 			width: 190px;
@@ -2377,7 +2425,7 @@ h4 {
 			text-decoration: underline;
 			text-decoration-color: transparent;
 
-			transition: all 0.3s ease;
+			transition: $anim;
 		}
 	}
 }
@@ -2394,6 +2442,33 @@ h4 {
 				text-decoration-color: #34D186;
 			}
 		}
+	}
+}
+
+@media (max-width: 575.5px) {
+	.car-models-grid {
+		justify-content: center;
+		grid-template-columns: 165px 165px;
+		gap: 15px;
+
+		a {
+			min-height: 170px;
+
+			img {
+				width: 133px;
+				height: 91px;
+			}
+		}
+	}
+
+	.h2_mw575-center {
+		text-align: center;
+	}
+}
+
+@media (max-width: 366px) {
+	.car-models-grid {
+		grid-template-columns: 200px;
 	}
 }
 
