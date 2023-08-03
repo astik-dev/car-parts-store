@@ -890,6 +890,12 @@ h4 {
 	margin: 16px 0 50px 0;
 	color: #313131;
 }
+.car-choice__container_tabs2-only {
+	padding: 0 0 70px 0;
+}
+.car-choice__container_tabs2-only .car-choice__tabs2 {
+	padding: 0;
+}
 .car-choice__tabs1-btns {
 	display: -webkit-inline-box;
 	display: -ms-inline-flexbox;
@@ -1180,6 +1186,12 @@ h4 {
 	.car-choice__container > p {
 		margin: 14px 0 40px 0;
 	}
+	.car-choice__container_tabs2-only {
+		padding: 0 0 50px 0;
+	}
+	.car-choice__container_tabs2-only .car-choice__tabs2 {
+		padding: 0;
+	}
 	.car-choice__tabs1-btns {
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -1221,6 +1233,9 @@ h4 {
 	.car-choice__container > p {
 		margin: 12px 0 30px 0;
 	}
+	.car-choice__container_tabs2-only {
+		padding: 0 0 40px 0;
+	}
 }
 @media (max-width: 575.5px) {
 	.car-choice__container {
@@ -1228,6 +1243,9 @@ h4 {
 	}
 	.car-choice__container > p {
 		margin: 10px 0 25px 0;
+	}
+	.car-choice__container_tabs2-only {
+		padding: 0 0 30px 0;
 	}
 	.car-choice__tabs1-btns button {
 		width: auto;

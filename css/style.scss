@@ -818,14 +818,18 @@ h4 {
 	&__container {
 		padding: 70px 0;
 
-		> h1 {
-
-		}
-
 		> p {
 			margin: 16px 0 50px 0;
 
 			color: #313131;
+		}
+
+		&_tabs2-only {
+			padding: 0 0 70px 0;
+
+			.car-choice__tabs2 {
+				padding: 0;
+			}
 		}
 	}
 	
@@ -1141,6 +1145,14 @@ h4 {
 			> p {
 				margin: 14px 0 40px 0;
 			}
+
+			&_tabs2-only {
+				padding: 0 0 50px 0;
+
+				.car-choice__tabs2 {
+					padding: 0;
+				}
+			}
 		}
 
 		&__tabs1 {
@@ -1195,6 +1207,10 @@ h4 {
 			> p {
 				margin: 12px 0 30px 0;
 			}
+
+			&_tabs2-only {
+				padding: 0 0 40px 0;
+			}
 		}
 	}
 }
@@ -1207,6 +1223,10 @@ h4 {
 
 			> p {
 				margin: 10px 0 25px 0;
+			}
+
+			&_tabs2-only {
+				padding: 0 0 30px 0;
 			}
 		}
 
