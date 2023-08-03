@@ -1852,6 +1852,12 @@ h4 {
 
 
 
+.pb-113 {
+	padding-bottom: 113px;
+}
+
+
+
 .car-parts-cards-grid {
 	@include grid(grid, repeat(auto-fill, minmax(230px, 1fr)), 25px, stretch, stretch);
 }
@@ -2336,6 +2342,58 @@ h4 {
 @media (max-width: 575.5px) {
 	.breadcrumb {
 		padding: 25px 0 20px 0;
+	}
+}
+
+
+
+.car-models-grid {
+	@include grid(grid, repeat(auto-fill, minmax(280px, 1fr)), 27px, stretch, stretch);
+
+	a {
+		@include flex(inline-flex, column, 10px, center, flex-start);
+		min-height: 220px;
+		padding-top: 18px;
+
+		border-radius: 16px;
+		background: #FFF;
+
+		transition: all 0.3s ease;
+
+		img {
+			width: 190px;
+			height: 130px;
+
+			object-fit: contain;
+		}
+
+		span {
+			display: block;
+			padding: 0 15px 15px 15px;
+			
+			@include font(18px, 24px);
+			color: #383F41;
+			text-align: center;
+			text-decoration: underline;
+			text-decoration-color: transparent;
+
+			transition: all 0.3s ease;
+		}
+	}
+}
+
+@media (hover: hover) {
+
+	.car-models-grid {
+
+		a:hover {
+			box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.14);
+
+			span {
+				color: #34D186;
+				text-decoration-color: #34D186;
+			}
+		}
 	}
 }
 
