@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<title>Car parts store</title>
+
+		<meta charset="UTF-8">
+
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta name="format-detection" content="telephone=no">
+
+		<meta name="robots" content="noindex">
+	</head>
+	<body>
+
+		<header>
+
+			<div class="header__ad">
+				<div class="content-container">
+					<div class="header__ad-container">
+						<div class="header__ad-text-btn">
+							<p>У нас з’явились диски та шини!</p>
+							<a href="#">Обери прямо зараз</a>
+						</div>
+						<button class="header__ad-close" aria-label="Закрити" onClick="closeHeaderAd();"></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="header__top">
+				<div class="content-container">
+					<div class="header__top-container">
+						<div class="header__top-menu-tels-lang">
+							<nav class="header__top-menu">
+								<ul>
+									<li><a href="#">Запит по VIN</a></li>
+									<li><a href="#">Каталоги</a></li>
+									<li><a href="#">Доставка і оплата</a></li>
+									<li><a href="#">Корисна інформація</a></li>
+									<li><a href="#">Контакти</a></li>
+								</ul>
+							</nav>
+							<ul class="header__top-tels">
+								<li><a href="#">(096) 498-48-18</a></li>
+								<li><a href="#">(068) 373-43-60</a></li>
+								<li><a href="#">(050) 637-39-87</a></li>
+							</ul>
+							<div class="header__top-lang">
+								<span>UA</span>
+								<a href="#">RU</a>
+							</div>
+						</div>
+						<div class="header__top-cart">
+							<a href="#">Мій кошик <span>0</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="header__center">
+				<div class="content-container">
+					<div class="header__center-container">
+						<a href="index.html" class="header__center-logo">
+							<img src="img/logo.png" alt="Logo">
+						</a>
+						<div class="header__center-search">
+							<form action="#">
+								<input type="text" placeholder="Пошук за артикулом, наприклад ОС90">
+								<button aria-label="Пошук"></button>
+							</form>
+						</div>
+						<a href="#" class="header__center-account">
+							<img src="img/account.svg" alt="Аватар">
+							<span>Особистий кабінет</span>
+							<span>Привіт, <span>увійти</span></span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="header__bottom">
+				<div class="content-container">
+					<div class="header__bottom-container">
+						<div class="header__bottom-burger">
+							<button aria-label="Меню" onClick="burgerMenu();">
+								<span></span>
+								<span></span>
+								<span></span>
+							</button>
+						</div>
+						<div class="header__bottom-menu">
+							<ul>
+								<li>
+									<span>Запчастини для ТО</span>
+									<div class="header__bottom-menu-sub">
+										<div>
+											<span>Деталі для технічного обслуговування</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Ремінь ГРМ</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+											</ul>
+										</div>
+										<div>
+											<span>Гальмівні елементи</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li>
+									<span>Гальмівна система</span>
+									<div class="header__bottom-menu-sub">
+										<div>
+											<span>Гальмівні елементи</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Lorem ipsum dolor sit, amet consectetur, adipisicing elit.</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li>
+									<span>Підвіска та рульове</span>
+									<div class="header__bottom-menu-sub">
+										<div>
+											<span>Гальмівні елементи</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+											</ul>
+										</div>
+										<div>
+											<span>Гальмівні елементи</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+											</ul>
+										</div>
+										<div>
+											<span>Гальмівні елементи</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li>
+									<span>Коробка передач</span>
+									<div class="header__bottom-menu-sub">
+										<div>
+											<span>Гальмівні елементи</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+											</ul>
+										</div>
+										<div>
+											<span>Гальмівні елементи</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li>
+									<span>Двигун та ходова</span>
+									<div class="header__bottom-menu-sub header__bottom-menu-sub_right">
+										<div>
+											<span>Деталі для технічного обслуговування</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Ремінь ГРМ</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Ремінь ГРМ</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Ремінь ГРМ</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Ремінь ГРМ</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+											</ul>
+										</div>
+										<div>
+											<span>Гальмівні елементи</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+											</ul>
+										</div>
+										<div>
+											<span>Деталі для технічного обслуговування</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Ремінь ГРМ</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li>
+									<span>Паливна система</span>
+									<div class="header__bottom-menu-sub">
+										<div>
+											<span>Гальмівні елементи</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li>
+									<span>Вихлопна система</span>
+									<div class="header__bottom-menu-sub">
+										<div>
+											<span>Гальмівні елементи</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+											</ul>
+											<span>Елементи</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li>
+									<span>Електрика та освітлення</span>
+									<div class="header__bottom-menu-sub">
+										<div>
+											<span>Гальмівні елементи</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Ремінь ГРМ</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li>
+									<span>Кузовні елементи</span>
+									<div class="header__bottom-menu-sub header__bottom-menu-sub_right">
+										<div>
+											<span>Гальмівні елементи</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+											</ul>
+										</div>
+										<div>
+											<span>Гальмівні елементи</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+											</ul>
+											<span>Гальмівні елементи</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li>
+									<span>Охолодження та опалення</span>
+									<div class="header__bottom-menu-sub header__bottom-menu-sub_right">
+										<div>
+											<span>Гальмівні елементи</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+											</ul>
+										</div>
+										<div>
+											<span>Гальмівні елементи</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+											</ul>
+											<span>Гальмівні елементи</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+											</ul>
+										</div>
+										<div>
+											<span>Гальмівні елементи</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</header>
+
+		<main class="main">
+
+			<div>
+				<div class="content-container">
+					<ul class="breadcrumb">
+						<li><a href="#">Головна</a></li>
+						<li>Результати пошука 1018</li>
+					</ul>
+				</div>
+			</div>
+
+			<section class="contact-us pt-80_pb-70">
+				<div class="content-container">
+					<div class="contact-us__container">
+						<h2>Не маєте часу на пошук автозапчастин?</h2>
+						<p class="p_18-21">Напишіть нам і наші менеджери допоможуть вам!</p>
+						<a href="#">Підібрати запчастини</a>
+						<img src="img/2cars-man.png" alt="Background image">
+					</div>
+				</div>
+
+			</section>
+
+		</main>
+
+		<footer class="footer">
+			<div class="content-container">
+				<div class="footer__container">
+
+					<div class="footer__tels">
+						<p class="footer__title">Підбір запчастин</p>
+						<div class="footer__tels-items">
+							<a href="#">
+								<span class="icon icon-viber"></span>
+								<span>(096) 498-48-18</span>
+							</a>
+							<a href="#">
+								<span class="icon icon-vodafone"></span>
+								<span>(068) 373-43-60</span>
+							</a>
+							<a href="#">
+								<span class="icon icon-lifecell"></span>
+								<span>(050) 637-39-87</span>
+							</a>
+						</div>
+					</div>
+
+					<div class="footer__time-info">
+						<div class="footer__time">
+							<p class="footer__title">Часи роботи</p>
+							<p>Пн - Сб:  08:00 - 19:00<br><br>Нд: 09:00 - 15:00</p>
+						</div>
+						<div class="footer__info">
+							<p class="footer__title">Інформація</p>
+							<div class="footer__links">
+								<a href="#">Угода користувача</a>
+								<a href="#">Політика конфіденційності</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="footer__clients">
+						<p class="footer__title">Клієнтам</p>
+						<div class="footer__links">
+							<a href="#">Запит по VIN</a>
+							<a href="#">Каталоги</a>
+							<a href="#">Доставка і оплата</a>
+							<a href="#">Корисна інформація</a>
+							<a href="#">Контакти</a>
+						</div>
+					</div>
+
+					<div class="footer__payment">
+						<p class="footer__title">Оплата</p>
+						<div class="footer__payment-items">
+							<span class="icon icon-visa"></span>
+							<span class="icon icon-mastercard"></span>
+							<span class="icon icon-google-pay"></span>
+							<span class="icon icon-apple-pay"></span>
+							<span class="icon icon-liqpay"></span>
+						</div>
+					</div>
+
+					<div class="footer__logo-copy-socials">
+						<img class="footer__logo" src="img/logo.png" alt="Logo">
+						<p class="footer__copy">Copyright © 2010-2023 «GCAR.PARTS»</p>
+						<div class="footer__socials">
+							<a href="#" aria-label="Facebook" class="icon icon-socials icon-socials-facebook"></a>
+							<a href="#" aria-label="Instagram" class="icon icon-socials icon-socials-instagram"></a>
+							<a href="#" aria-label="YouTube" class="icon icon-socials icon-socials-youtube"></a>
+							<a href="#" aria-label="Skype" class="icon icon-socials icon-socials-skype"></a>
+							<a href="#" aria-label="Telegram" class="icon icon-socials icon-socials-telegram">></a>
+							<a href="#" aria-label="Viber" class="icon icon-socials icon-socials-viber"></a>
+							<a href="#" aria-label="Messanger" class="icon icon-socials icon-socials-messenger"></a>
+							<a href="#" aria-label="WhatsApp" class="icon icon-socials icon-socials-whatsapp"></a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</footer>
+		
+		<script src="js/script.js"></script>
+	</body>
+</html>
