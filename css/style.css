@@ -2288,6 +2288,91 @@ h4 {
 		grid-template-columns: 200px;
 	}
 }
+.search-art {
+	padding-bottom: 80px;
+}
+.search-art__grid {
+	margin-top: 50px;
+}
+.search-art__grid-row {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 16.774% 0 18.145% 0 1fr 0 auto;
+	grid-template-columns: 16.774% 18.145% 1fr auto;
+	gap: 0;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: left;
+	    -ms-flex-pack: left;
+	        justify-content: left;
+	justify-items: start;
+	padding: 7px 22px 6px 18px;
+	border-bottom: 1px solid #DCDCDC;
+	-webkit-transition: all 0.15s ease;
+	transition: all 0.15s ease;
+}
+.search-art__grid-row p {
+	display: none;
+}
+.search-art__grid-row p, .search-art__grid-row a {
+	font-size: 14px;
+	line-height: 17px;
+	color: #313131;
+}
+.search-art__grid-row a {
+	text-decoration: underline;
+	text-decoration-color: transparent;
+	-webkit-transition: all 0.15s ease;
+	transition: all 0.15s ease;
+}
+.search-art__grid-row a:last-child {
+	display: inline-block;
+	padding: 9px 12px 10px 12px;
+	color: #fff;
+	font-weight: 500;
+	text-decoration: none;
+	border-radius: 8px;
+	background: #34D186;
+}
+.search-art__grid-row_title {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 16.774% 0 18.145% 0 1fr;
+	grid-template-columns: 16.774% 18.145% 1fr;
+	gap: 0;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: start;
+	-webkit-box-pack: left;
+	    -ms-flex-pack: left;
+	        justify-content: left;
+	padding: 16px 22px 17px 18px;
+	border-radius: 16px 16px 0px 0px;
+	background: #313131;
+}
+.search-art__grid-row_title p {
+	display: block;
+	color: #FFF;
+	text-transform: uppercase;
+}
+
+@media (hover: hover) {
+	.search-art__grid-row:hover {
+		background: #F4F4F4;
+	}
+	.search-art__grid-row_title:hover {
+		background: #313131;
+	}
+	.search-art__grid-row a:hover {
+		color: #34D186;
+		text-decoration-color: #34D186;
+	}
+	.search-art__grid-row a:last-child:hover {
+		color: #fff;
+		background: #313131;
+	}
+}
 .footer {
 	margin-top: 100px;
 	background: #313131;
