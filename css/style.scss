@@ -2771,6 +2771,221 @@ h4 {
 
 
 
+.search-art-brand {
+	padding-bottom: 80px;
+
+	h3 {
+		margin: 50px 0 30px 0;
+		@include font(36px, 43px);
+	}
+
+	.content-container > :last-child {
+		margin-bottom: 0;
+	}
+
+	&__item {
+		$anim: all 0.15s ease;
+
+		@include grid(grid, minmax(490px, 42.96875%) 1fr, 0, start, left);
+		margin-bottom: 20px;
+
+		border-radius: 16px;
+		background: #FFF;
+		border: 1px solid #DCDCDC;
+
+		overflow: hidden;
+
+		transition: all 0.3s ease;
+
+		&-left {
+			@include grid(grid, 200px 1fr, 30px, center, left);
+			min-height: 320px;
+			padding: 20px 35px 20px 35px;
+
+			img {
+				width: 100%;
+				height: 200px;
+
+				object-fit: contain;
+			}
+
+			div {
+
+				a {
+					@include font(16px, 22px);
+					color: #313131;
+					font-weight: 500;
+					text-decoration: underline;
+					text-decoration-color: transparent;
+
+					transition: $anim;
+				}
+
+				ul {
+					margin-top: 18px;
+					@include flex(flex, column, 2px, flex-start, flex-start);
+
+					li {
+						@include font(14px, 20px);
+						color: #696969;
+						font-weight: 300;
+
+						span {
+							color: #313131;
+						}
+					}
+				}
+			}
+		}
+
+		&-right {
+			border-left: 1px solid #DCDCDC;
+			align-self: stretch;
+
+			div {
+				@include grid(grid, 26.02% 28.655% 1fr auto, 0, center, left);
+				padding: 7px 20px 6px 25px;
+
+				border-bottom: 1px solid #DCDCDC;
+
+				transition: $anim;
+
+				p, a {
+					@include font(14px, 17px);
+					color: #313131;
+				}
+
+				p {
+					padding-right: 10px;
+				}
+
+				a {
+					display: inline-block;
+					padding: 9px 9px 10px 10px;
+
+					color: #fff;
+					font-weight: 500;
+					text-decoration: none;
+
+					border-radius: 8px;
+					background: #34D186;
+
+					transition: $anim;
+				}
+			}
+
+			> :first-child {
+				@include grid(grid, 26.02% 28.655% 1fr, 0, center, left);
+				min-height: 50px;
+				
+				background: #313131;
+				border-bottom: 0;
+
+				p {
+					color: #FFF;
+					text-transform: uppercase;
+				}
+			}
+
+			div.search-art-brand__item-right-load {
+				@include flex(flex, row, 0, center, center);
+				padding: 0;
+				height: 68px;
+
+				border-bottom: 0;
+
+				button {
+					display: inline-block;
+
+					@include font(14px, 17px);
+					color: #34D186;
+					text-decoration: underline;
+					text-decoration-color: transparent;
+
+					background: transparent;
+
+					transition: $anim;
+				}
+			}
+
+			div.search-art-brand__item-right-none {
+				@include flex(flex, row, 0, center, center);
+				padding: 0;
+				min-height: 268px;
+
+				border-bottom: 0;
+					
+				button {
+					width: 260px;
+					padding: 15px 20px 16px 20px;
+
+					border-radius: 10px;
+					background: #F4F4F4;
+				}
+			}
+		}
+	}
+}
+
+@media (hover: hover) {
+	.search-art-brand {
+
+		&__item:hover {
+			box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.14);
+		}
+
+		&__item {
+
+			&-left {
+
+				div {
+
+					a:hover {
+						color: #34D186;
+						text-decoration-color: #34D186;
+					}
+				}
+			}
+
+			&-right {
+
+				div {
+
+					a:hover {
+						color: #fff;
+						background: #313131;
+					}
+				}
+
+				div:hover {
+					background: #F4F4F4;
+				}
+
+				> :first-child:hover {
+					background: #313131;
+				}
+
+				div.search-art-brand__item-right-load {
+
+					&:hover {
+						background: transparent;
+					}
+					
+					button:hover {
+						text-decoration-color: #34D186;
+					}
+				}
+
+				div.search-art-brand__item-right-none:hover {
+					background: transparent;
+				}
+			}
+		}
+	}
+}
+
+
+
 .titles-category-сards {
 
 	h2, h4 {

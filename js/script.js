@@ -223,6 +223,15 @@ function swithTabs2(tabNumber, elem) {
 	dqs(`.car-choice__tabs2-btns button:nth-child(${tabNumber})`).disabled = false;
 }
 
+function searchLoadItems(btn) {
+	
+	const newSearchItems = `<div> <p>31 од.</p> <p>2 дні</p> <p>12 456 грн</p> <a href="#">Купити</a> </div> <div> <p>2 од.</p> <p>10 днів</p> <p>2 456 грн</p> <a href="#">Купити</a> </div> <div> <p>12 од.</p> <p>1 дні</p> <p>456 грн</p> <a href="#">Купити</a> </div> <div> <p>4 од.</p> <p>2 дні</p> <p>56 грн</p> <a href="#">Купити</a> </div>`;
+	
+	btn.parentNode.insertAdjacentHTML("beforebegin", newSearchItems);
+
+	btn.parentNode.style.display = "none";
+}
+
 
 
 // Event Listeners
