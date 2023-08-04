@@ -1055,6 +1055,7 @@ h4 {
 }
 .car-choice__tabs2-content button:disabled {
 	color: #DCDCDC;
+	text-decoration: none;
 	background: #F4F4F4;
 	cursor: not-allowed;
 }
