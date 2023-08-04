@@ -2326,7 +2326,7 @@ h4 {
 	-webkit-transition: all 0.15s ease;
 	transition: all 0.15s ease;
 }
-.search-art__grid-row a:last-child {
+.search-art__grid-row div:last-child a {
 	display: inline-block;
 	padding: 9px 12px 10px 12px;
 	color: #fff;
@@ -2368,9 +2368,98 @@ h4 {
 		color: #34D186;
 		text-decoration-color: #34D186;
 	}
-	.search-art__grid-row a:last-child:hover {
+	.search-art__grid-row div:last-child a:hover {
 		color: #fff;
 		background: #313131;
+	}
+}
+@media (max-width: 991.5px) {
+	.search-art {
+		padding-bottom: 60px;
+	}
+	.search-art__grid {
+		margin-top: 40px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		gap: 20px;
+		-webkit-box-align: stretch;
+		    -ms-flex-align: stretch;
+		        align-items: stretch;
+		-webkit-box-pack: stretch;
+		    -ms-flex-pack: stretch;
+		        justify-content: stretch;
+	}
+	.search-art__grid-row {
+		padding: 0px;
+		justify-items: stretch;
+		-ms-grid-columns: 1fr;
+		grid-template-columns: 1fr;
+		border: 1px solid #DCDCDC;
+	}
+	.search-art__grid-row p {
+		display: block;
+	}
+	.search-art__grid-row p, .search-art__grid-row a {
+		font-size: 16px;
+		line-height: 19px;
+	}
+	.search-art__grid-row div {
+		padding: 14.1px 18px 14.1px 18px;
+		display: -ms-grid;
+		display: grid;
+		-ms-grid-columns: auto 20px 1fr;
+		grid-template-columns: auto 1fr;
+		gap: 20px;
+		-webkit-box-align: start;
+		    -ms-flex-align: start;
+		        align-items: start;
+		-webkit-box-pack: left;
+		    -ms-flex-pack: left;
+		        justify-content: left;
+		border-bottom: 1px solid #DCDCDC;
+	}
+	.search-art__grid-row div a {
+		text-align: right;
+		-ms-grid-column-align: end;
+		    justify-self: end;
+		text-decoration-color: #313131;
+	}
+	.search-art__grid-row div:last-child {
+		border-bottom: 0px;
+		padding: 5px 18px 5px 18px;
+	}
+	.search-art__grid-row div:last-child p {
+		-ms-flex-item-align: center;
+		    -ms-grid-row-align: center;
+		    align-self: center;
+	}
+	.search-art__grid-row_title {
+		display: none;
+	}
+}
+@media (max-width: 767.5px) {
+	.search-art {
+		padding-bottom: 50px;
+	}
+	.search-art__grid {
+		margin-top: 30px;
+	}
+}
+@media (max-width: 575.5px) {
+	.search-art {
+		padding-bottom: 35px;
+	}
+	.search-art__grid {
+		margin-top: 20px;
+	}
+	.search-art__grid-row div, .search-art__grid-row div:last-child {
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 }
 .footer {
