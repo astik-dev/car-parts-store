@@ -1956,6 +1956,30 @@ h4 {
 
 
 
+.pt-70 {
+	padding-top: 70px;
+}
+
+@media (max-width: 991.5px) {
+	.pt-70 {
+		padding-top: 55px;
+	}
+}
+
+@media (max-width: 767.5px) {
+	.pt-70 {
+		padding-top: 43px;
+	}
+}
+
+@media (max-width: 575.5px) {
+	.pt-70 {
+		padding-top: 30px;
+	}
+}
+
+
+
 .car-parts-cards-grid {
 	@include grid(grid, repeat(auto-fill, minmax(230px, 1fr)), 25px, stretch, stretch);
 }
@@ -2033,6 +2057,50 @@ h4 {
 			color: #34D186;
 			text-decoration-color: #34D186;
 		}
+	}
+}
+
+.car-model-link {
+	position: relative;
+
+	height: 80px;
+	padding: 0 35px 0 17px;
+	@include flex(inline-flex, row, 0, center, flex-start);
+
+	@include font(18px, 24px);
+	color: #313131;
+	text-decoration: underline;
+	text-decoration-color: transparent;
+
+	border-radius: 12px;
+
+	transition: all 0.15s ease;
+
+	&:after {
+		content: "";
+
+		position: absolute;
+		top: 30px;
+		right: 15px;
+
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+
+		background: url("../img/arrow_grey.svg") no-repeat;
+		background-size: 100% 100%;
+
+		transform: rotate(-90deg);
+	}
+}
+
+@media (hover: hover) {
+	.car-model-link:hover {
+		color: #34D186;
+		text-decoration-color: #34D186;
+
+		background: #FFF;
+		box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.14);
 	}
 }
 
@@ -2786,7 +2854,6 @@ h4 {
 
 .car-part-for-models {
 	@include grid(grid, 1fr 1fr 1fr 1fr, 27px, stretch, stretch);
-	// repeat(auto-fill, minmax(237px, 1fr))
 
 	&__group {
 		@include flex(flex, column, 0, start, stretch);
