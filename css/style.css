@@ -2778,6 +2778,10 @@ h4 {
 .search-art-brand__item-right div.search-art-brand__item-right-none button {
 	width: 260px;
 	padding: 15px 20px 16px 20px;
+	font-size: 16px;
+	line-height: 19px;
+	color: #313131;
+	font-weight: 500;
 	border-radius: 10px;
 	background: #F4F4F4;
 }
@@ -2809,6 +2813,83 @@ h4 {
 	}
 	.search-art-brand__item-right div.search-art-brand__item-right-none:hover {
 		background: transparent;
+	}
+}
+@media (max-width: 991.5px) {
+	.search-art-brand {
+		padding-bottom: 60px;
+	}
+	.search-art-brand h3 {
+		margin: 40px 0 25px 0;
+		font-size: 30px;
+		line-height: 36px;
+	}
+	.search-art-brand__item {
+		-ms-grid-columns: 1fr;
+		grid-template-columns: 1fr;
+	}
+	.search-art-brand__item-left {
+		min-height: 240px;
+	}
+	.search-art-brand__item-right div.search-art-brand__item-right-load button {
+		text-decoration-color: #34D186;
+	}
+	.search-art-brand__item-right div.search-art-brand__item-right-none {
+		min-height: 90px;
+	}
+}
+@media (max-width: 767.5px) {
+	.search-art-brand {
+		padding-bottom: 48px;
+	}
+	.search-art-brand h3 {
+		margin: 30px 0 20px 0;
+		font-size: 26px;
+		line-height: 31px;
+	}
+}
+@media (max-width: 575.5px) {
+	.search-art-brand {
+		padding-bottom: 35px;
+	}
+	.search-art-brand h3 {
+		margin: 20px 0 15px 0;
+		font-size: 21px;
+		line-height: 25px;
+	}
+	.search-art-brand__item-left {
+		-ms-grid-columns: 1fr;
+		grid-template-columns: 1fr;
+		padding: 30px 15px 15px 15px;
+	}
+	.search-art-brand__item-left img {
+		width: 175px;
+		height: 175px;
+		margin: 0 auto;
+	}
+	.search-art-brand__item-left div ul {
+		margin-top: 10px;
+	}
+	.search-art-brand__item-right div {
+		padding: 7px 15px 6px 15px;
+		-ms-grid-columns: minmax(95px, 30%) 1fr auto;
+		grid-template-columns: minmax(95px, 30%) 1fr auto;
+	}
+	.search-art-brand__item-right div p:nth-child(2) {
+		display: none;
+	}
+	.search-art-brand__item-right div p {
+		padding-right: 6px;
+	}
+	.search-art-brand__item-right > :first-child {
+		-ms-grid-columns: minmax(95px, 30%) 1fr;
+		grid-template-columns: minmax(95px, 30%) 1fr;
+	}
+	.search-art-brand__item-right div.search-art-brand__item-right-load {
+		height: 50px;
+	}
+	.search-art-brand__item-right div.search-art-brand__item-right-none {
+		min-height: 80px;
 	}
 }
 .titles-category-сards h2, .titles-category-сards h4 {

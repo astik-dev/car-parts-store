@@ -2776,6 +2776,7 @@ h4 {
 
 	h3 {
 		margin: 50px 0 30px 0;
+
 		@include font(36px, 43px);
 	}
 
@@ -2919,6 +2920,10 @@ h4 {
 					width: 260px;
 					padding: 15px 20px 16px 20px;
 
+					@include font(16px, 19px);
+					color: #313131;
+					font-weight: 500;
+
 					border-radius: 10px;
 					background: #F4F4F4;
 				}
@@ -2978,6 +2983,113 @@ h4 {
 
 				div.search-art-brand__item-right-none:hover {
 					background: transparent;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 991.5px) {
+	.search-art-brand {
+		padding-bottom: 60px;
+
+		h3 {
+			margin: 40px 0 25px 0;
+
+			@include font(30px, 36px);
+		}
+
+		&__item {
+			grid-template-columns: 1fr;
+
+			&-left {
+				min-height: 240px;
+			} 
+
+			&-right {
+
+				div.search-art-brand__item-right-load {
+
+					button {
+						text-decoration-color: #34D186;
+					}
+				}
+
+				div.search-art-brand__item-right-none {
+					min-height: 90px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 767.5px) {
+	.search-art-brand {
+		padding-bottom: 48px;
+
+		h3 {
+			margin: 30px 0 20px 0;
+
+			@include font(26px, 31px);
+		}
+	}
+}
+
+@media (max-width: 575.5px) {
+	.search-art-brand {
+		padding-bottom: 35px;
+
+		h3 {
+			margin: 20px 0 15px 0;
+
+			@include font(21px, 25px);
+		}
+
+		&__item {
+
+			&-left {
+				grid-template-columns: 1fr;
+				padding: 30px 15px 15px 15px;
+
+				img {
+					width: 175px;
+					height: 175px;
+					margin: 0 auto;
+				}
+
+				div {
+
+					ul {
+						margin-top: 10px;
+					}
+				}
+			}
+
+			&-right {
+
+				div {
+					padding: 7px 15px 6px 15px;
+					grid-template-columns: minmax(95px, 30%) 1fr auto;
+
+					p:nth-child(2) {
+						display: none;
+					}
+
+					p {
+						padding-right: 6px;
+					}
+				}
+
+				> :first-child {
+					grid-template-columns: minmax(95px, 30%) 1fr;
+				}
+
+				div.search-art-brand__item-right-load {
+					height: 50px;
+				}
+
+				div.search-art-brand__item-right-none {
+					min-height: 80px;
 				}
 			}
 		}
