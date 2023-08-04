@@ -2561,7 +2561,8 @@ h4 {
 .car-part-for-models {
 	display: -ms-grid;
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	-ms-grid-columns: 1fr 27px 1fr 27px 1fr 27px 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 	gap: 27px;
 	-webkit-box-align: stretch;
 	    -ms-flex-align: stretch;
@@ -2602,6 +2603,30 @@ h4 {
 @media (hover: hover) {
 	.car-part-for-models__group a:hover {
 		text-decoration: underline;
+	}
+}
+@media (max-width: 991.5px) {
+	.car-part-for-models__group p {
+		margin-bottom: 13px;
+	}
+}
+@media (max-width: 767.5px) {
+	.car-part-for-models {
+		-ms-grid-columns: 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	.car-part-for-models__group p {
+		margin-bottom: 10px;
+	}
+}
+@media (max-width: 575.5px) {
+	.car-part-for-models {
+		-ms-grid-columns: 1fr 20px 1fr;
+		grid-template-columns: 1fr 1fr;
+		gap: 20px;
+	}
+	.car-part-for-models__group p {
+		margin-bottom: 7px;
 	}
 }
 .footer {

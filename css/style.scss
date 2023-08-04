@@ -2785,7 +2785,8 @@ h4 {
 
 
 .car-part-for-models {
-	@include grid(grid, repeat(auto-fill, minmax(280px, 1fr)), 27px, stretch, stretch);
+	@include grid(grid, 1fr 1fr 1fr 1fr, 27px, stretch, stretch);
+	// repeat(auto-fill, minmax(237px, 1fr))
 
 	&__group {
 		@include flex(flex, column, 0, start, stretch);
@@ -2812,6 +2813,45 @@ h4 {
 
 			a:hover {
 				text-decoration: underline;
+			}
+		}
+	}
+}
+
+@media (max-width: 991.5px) {
+	.car-part-for-models {
+
+		&__group {
+
+			p {
+				margin-bottom: 13px;
+			}
+		}
+	}
+}
+
+@media (max-width: 767.5px) {
+	.car-part-for-models {
+		grid-template-columns: 1fr 1fr 1fr;
+
+		&__group {
+
+			p {
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+
+@media (max-width: 575.5px) {
+	.car-part-for-models {
+		grid-template-columns: 1fr 1fr;
+		gap: 20px;
+
+		&__group {
+
+			p {
+				margin-bottom: 7px;
 			}
 		}
 	}
