@@ -3254,7 +3254,13 @@ h4 {
 
 
 .products-grid-4 {
-	@include grid(grid, repeat(auto-fill, minmax(280px, 1fr)), 27px, stretch, stretch);
+	@include grid(grid, repeat(auto-fill, minmax(270px, 1fr)), 27px, stretch, stretch);
+}
+
+@media (max-width: 575.5px) {
+	.products-grid-4 {
+		gap: 25px;
+	}
 }
 
 .product {
@@ -3305,7 +3311,7 @@ h4 {
 
 	&__price-buy-btn {
 		margin: 30px 0 24px 0;
-		@include flex(flex, row, 15px, center, space-between);
+		@include flex(flex, row, 5px, center, space-between);
 
 		p {
 			@include font(26px, 36px);
@@ -3430,6 +3436,21 @@ h4 {
 				color: #34D186;
 				text-decoration-color: #34D186;
 			}
+		}
+	}
+}
+
+@media (max-width: 991.5px) {
+	.products-pagination {
+		margin-top: 25px;
+	}
+}
+
+@media (max-width: 767.5px) {
+	.products-pagination {
+
+		&__nav {
+			display: none;
 		}
 	}
 }
