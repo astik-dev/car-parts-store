@@ -3524,6 +3524,18 @@ h4 {
 	@include grid(grid, repeat(auto-fill, minmax(240px, 1fr)), 27px, stretch, stretch);
 }
 
+@media (max-width: 526.5px) {
+	.category-car-models-grid {
+		grid-template-columns: 300px;
+		justify-content: center;
+		gap: 20px;
+	}
+
+	.h2_mw526-center {
+		text-align: center;
+	}
+}
+
 .category-car-model {
 	position: relative;
 
@@ -3595,7 +3607,7 @@ h4 {
 	}
 	&__open-all {
 		margin-top: 12px;
-		
+
 		@include font(14px, 20px); 
 		color: #34D186;
 		text-decoration: underline;

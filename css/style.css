@@ -3316,6 +3316,19 @@ h4 {
 	        justify-content: stretch;
 }
 
+@media (max-width: 526.5px) {
+	.category-car-models-grid {
+		-ms-grid-columns: 300px;
+		grid-template-columns: 300px;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		gap: 20px;
+	}
+	.h2_mw526-center {
+		text-align: center;
+	}
+}
 .category-car-model {
 	position: relative;
 	padding: 19px 17px 27px 19px;
