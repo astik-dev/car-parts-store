@@ -1980,6 +1980,30 @@ h4 {
 
 
 
+.pb-90 {
+	padding-bottom: 90px;
+}
+
+@media (max-width: 991.5px) {
+	.pb-90 {
+		padding-bottom: 65px;
+	}
+}
+
+@media (max-width: 767.5px) {
+	.pb-90 {
+		padding-bottom: 50px;
+	}
+}
+
+@media (max-width: 575.5px) {
+	.pb-90 {
+		padding-bottom: 40px;
+	}
+}
+
+
+
 .car-parts-cards-grid {
 	@include grid(grid, repeat(auto-fill, minmax(230px, 1fr)), 25px, stretch, stretch);
 }
@@ -3452,6 +3476,45 @@ h4 {
 		&__nav {
 			display: none;
 		}
+	}
+}
+
+
+
+.links-grid-4 {
+	@include grid(grid, repeat(auto-fill, minmax(240px, 1fr)), 27px, stretch, stretch);
+	
+	div {
+		@include flex(flex, column, 0, flex-start, flex-start);
+
+		a {
+			@include font(16px, 30px);
+			color: #313131;
+			text-decoration: underline;
+			text-decoration-color: transparent;
+
+			transition: all 0.15s ease;
+		}
+	}
+}
+
+@media (hover: hover) {
+	.links-grid-4 {
+
+		div {
+
+			a:hover {
+				color: #34D186;
+				text-decoration-color: #34D186;
+			}
+		}
+	}
+}
+
+@media (max-width: 575.5px) {
+	.links-grid-4 {
+		grid-template-columns: 1fr 1fr;
+		gap: 20px 15px;
 	}
 }
 

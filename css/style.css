@@ -1826,6 +1826,25 @@ h4 {
 		padding-top: 30px;
 	}
 }
+.pb-90 {
+	padding-bottom: 90px;
+}
+
+@media (max-width: 991.5px) {
+	.pb-90 {
+		padding-bottom: 65px;
+	}
+}
+@media (max-width: 767.5px) {
+	.pb-90 {
+		padding-bottom: 50px;
+	}
+}
+@media (max-width: 575.5px) {
+	.pb-90 {
+		padding-bottom: 40px;
+	}
+}
 .car-parts-cards-grid {
 	display: -ms-grid;
 	display: grid;
@@ -3231,6 +3250,57 @@ h4 {
 @media (max-width: 767.5px) {
 	.products-pagination__nav {
 		display: none;
+	}
+}
+.links-grid-4 {
+	display: -ms-grid;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+	gap: 27px;
+	-webkit-box-align: stretch;
+	    -ms-flex-align: stretch;
+	        align-items: stretch;
+	-webkit-box-pack: stretch;
+	    -ms-flex-pack: stretch;
+	        justify-content: stretch;
+}
+.links-grid-4 div {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	gap: 0;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+}
+.links-grid-4 div a {
+	font-size: 16px;
+	line-height: 30px;
+	color: #313131;
+	text-decoration: underline;
+	text-decoration-color: transparent;
+	-webkit-transition: all 0.15s ease;
+	transition: all 0.15s ease;
+}
+
+@media (hover: hover) {
+	.links-grid-4 div a:hover {
+		color: #34D186;
+		text-decoration-color: #34D186;
+	}
+}
+@media (max-width: 575.5px) {
+	.links-grid-4 {
+		-ms-grid-columns: 1fr 15px 1fr;
+		grid-template-columns: 1fr 1fr;
+		gap: 20px 15px;
 	}
 }
 .footer {
