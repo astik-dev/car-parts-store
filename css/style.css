@@ -3533,6 +3533,95 @@ h4 {
 		grid-column: 1/2;
 	}
 }
+.sorting {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	gap: 16px;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+}
+.sorting p {
+	padding-top: 12px;
+	font-size: 14px;
+	line-height: 17px;
+	color: #313131;
+}
+.sorting__btns {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	gap: 10px;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+.sorting__btn {
+	position: relative;
+	min-height: 40px;
+	padding: 10px 40px 10px 14px;
+	font-size: 14px;
+	line-height: 17px;
+	color: #313131;
+	font-weight: 500;
+	border-radius: 8px;
+	background: transparent;
+	-webkit-transition: all 0.15s ease;
+	transition: all 0.15s ease;
+}
+.sorting__btn:after {
+	content: "";
+	position: absolute;
+	top: 10px;
+	right: 14px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url("../img/sorting_arrow.svg") no-repeat;
+	background-size: 100% 100%;
+}
+.sorting__btn_active {
+	background: #F4F4F4;
+}
+.sorting__btn_mode2:after {
+	-webkit-transform: rotate(180deg);
+	        transform: rotate(180deg);
+}
+
+@media (max-width: 575.5px) {
+	.sorting {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		gap: 10px;
+	}
+	.sorting__btns {
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+}
 .footer {
 	margin-top: 100px;
 	background: #313131;

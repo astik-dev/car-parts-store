@@ -241,6 +241,23 @@ function openCategoryCarModel(btn) {
 	btn.style.display = "none";
 }
 
+function sort(btn) {
+
+	if (btn.classList.contains("sorting__btn_active")) {
+
+		if (btn.classList.contains("sorting__btn_mode2")) {
+			btn.classList.remove("sorting__btn_mode2");
+		} else {
+			btn.classList.add("sorting__btn_mode2");
+		}
+
+	} else {
+		
+		btn.parentNode.querySelector(".sorting__btn_active").classList.remove("sorting__btn_active");
+		btn.classList.add("sorting__btn_active");
+	}
+}
+
 
 
 // Event Listeners
