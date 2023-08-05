@@ -3622,6 +3622,101 @@ h4 {
 		        justify-content: center;
 	}
 }
+.current-car {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 23.4375% 30px 1fr 30px 1fr;
+	grid-template-columns: 23.4375% 1fr 1fr;
+	gap: 0 30px;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: start;
+	-webkit-box-pack: stretch;
+	    -ms-flex-pack: stretch;
+	        justify-content: stretch;
+}
+.current-car__image-model {
+	padding-top: 18px;
+	text-align: center;
+}
+.current-car__image-model img {
+	width: 190px;
+	height: 130px;
+}
+.current-car__image-model p {
+	margin-top: 10px;
+	font-size: 18px;
+	line-height: 24px;
+	color: #313131;
+}
+.current-car__table-row {
+	padding: 16px 17px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	gap: 20px;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+	border-bottom: 1px solid #DCDCDC;
+}
+.current-car__table-row p {
+	width: calc(50% - 10px);
+	font-size: 14px;
+	line-height: 17px;
+}
+.current-car__table-row p:nth-child(1) {
+	color: #696969;
+	font-weight: 300;
+}
+.current-car__table-row p:nth-child(2) {
+	color: #313131;
+}
+
+@media (max-width: 991.5px) {
+	.current-car {
+		-ms-grid-columns: 31.2% 1fr;
+		grid-template-columns: 31.2% 1fr;
+	}
+	.current-car__table:nth-child(3) {
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 1;
+		grid-column: 2/3;
+	}
+}
+@media (max-width: 767.5px) {
+	.current-car {
+		-ms-grid-columns: 1fr;
+		grid-template-columns: 1fr;
+	}
+	.current-car__image-model {
+		padding-top: 0;
+		margin-bottom: 30px;
+	}
+	.current-car__table:nth-child(2) .current-car__table-row:first-child {
+		border-top: 1px solid #DCDCDC;
+	}
+	.current-car__table:nth-child(3) {
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 1;
+		grid-column: 1/2;
+	}
+}
+@media (max-width: 575.5px) {
+	.current-car__image-model {
+		margin-bottom: 20px;
+	}
+	.current-car__table-row {
+		padding: 12px 10px;
+	}
+}
 .footer {
 	margin-top: 100px;
 	background: #313131;
