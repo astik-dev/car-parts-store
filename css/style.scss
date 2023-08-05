@@ -3520,6 +3520,120 @@ h4 {
 
 
 
+.category-car-models-grid {
+	@include grid(grid, repeat(auto-fill, minmax(240px, 1fr)), 27px, stretch, stretch);
+}
+
+.category-car-model {
+	position: relative;
+
+	padding: 19px 17px 27px 19px;
+
+	border-radius: 16px;
+
+	transition: all 0.3s ease;
+
+	&:after {
+		content: "";
+
+		position: absolute;
+		z-index: 1;
+		top: 31px;
+		right: 17px;
+
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+
+		background: url("../img/arrow_grey.svg") no-repeat;
+		background-size: 100% 100%;
+
+		transform: rotate(-90deg);
+	}
+
+	&__img-title {
+		position: relative;
+		z-index: 2;
+
+		@include flex(flex, row, 20px, center, stretch);
+		padding: 0 20px 0 2px;
+
+		img {
+			width: 40px;
+			height: 40px;
+
+			object-fit: contain;
+		}
+
+		div {
+
+			p {
+				color: #313131;
+				text-decoration: underline;
+				text-decoration-color: transparent;
+
+				transition: all 0.15s ease;
+			}
+
+			p:nth-child(1) {
+				@include font(14px, 19px); 
+			}
+
+			p:nth-child(2) {
+				@include font(16px, 22px); 
+			}
+		}
+	}
+	&__models {
+		margin-top: 18px;
+		@include flex(flex, column, 0, flex-start, flex-start);
+
+		a {
+			@include font(14px, 30px); 
+			color: #313131;
+		}
+	}
+	&__open-all {
+		margin-top: 12px;
+		
+		@include font(14px, 20px); 
+		color: #34D186;
+		text-decoration: underline;
+
+		background: transparent;
+	}
+}
+
+@media (hover: hover) {
+	.category-car-model {
+
+		&:hover {
+			background: #FFF;
+			box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.14);
+		}
+
+		&__img-title:hover {
+
+			div {
+
+				p {
+					color: #34D186;
+					text-decoration-color: #34D186;
+				}
+			}
+		}
+
+		&__models {
+
+			a:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+
+
 .footer {
 	margin-top: 100px;
 

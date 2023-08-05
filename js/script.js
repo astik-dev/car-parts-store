@@ -232,6 +232,15 @@ function searchLoadItems(btn) {
 	btn.parentNode.style.display = "none";
 }
 
+function openCategoryCarModel(btn) {
+
+	const newLinks = `<a href="#">AUDI 100</a> <a href="#">AUDI 200</a> <a href="#">AUDI 80</a> <a href="#">AUDI 90</a>`
+
+	btn.previousElementSibling.insertAdjacentHTML("beforeend", newLinks);
+
+	btn.style.display = "none";
+}
+
 
 
 // Event Listeners
