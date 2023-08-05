@@ -3253,6 +3253,189 @@ h4 {
 
 
 
+.products-grid-4 {
+	@include grid(grid, repeat(auto-fill, minmax(280px, 1fr)), 27px, stretch, stretch);
+}
+
+.product {
+	$anim: all 0.15s ease;
+
+	padding: 27px 32px 32px 32px;
+
+	border-radius: 16px;
+
+	transition: all 0.3s ease;
+
+	&__name {
+		font-weight: 500;
+	}
+
+	&__name,
+	&__category {
+		@include font(16px, 22px);
+		color: #313131;
+		text-decoration: underline;
+		text-decoration-color: transparent;
+
+		transition: $anim;
+	}
+
+	&__image {
+		margin: 20px 0;
+		display: block;
+		width: 100%;
+		height: 236px;
+
+		img {
+			width: 100%;
+			height: 100%;
+
+			object-fit: contain;
+		}
+
+		&_no {
+			@include flex(flex, row, 0, center, center);
+
+			img {
+				width: 94.167px;
+				height: 80px;
+			}
+		}
+	}
+
+	&__price-buy-btn {
+		margin: 30px 0 24px 0;
+		@include flex(flex, row, 15px, center, space-between);
+
+		p {
+			@include font(26px, 36px);
+			color: #313131;
+			font-weight: 500;
+
+			&:after {
+				content: " " attr(data-currency);
+
+				@include font(16px, 36px);
+				font-weight: 400;
+			}
+		}
+
+		button {
+			padding: 15px 15px 16px 15px;
+
+			@include font(16px, 19px);
+			color: #FFF;
+			font-weight: 500;
+
+			border-radius: 10px;
+			background: #34D186;
+
+			transition: $anim;
+		}
+	}
+
+	&__term {
+		@include font(14px, 17px);
+		color: #696969;
+		font-weight: 300;
+
+		span {
+			margin-left: 3.6px;
+			
+			color: #313131;
+		}
+	}
+
+	&__check-btn {
+		margin: 30px 0 24px 0;
+		display: block;
+		width: 100%;
+		padding: 15px 15px 16px 15px;
+
+		@include font(16px, 19px);
+		color: #313131;
+		font-weight: 500;
+
+		border-radius: 10px;
+		background: #F4F4F4;
+	}
+}
+
+@media (hover: hover) {
+	.product {
+
+		&:hover {
+			box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.14);
+		}
+
+		&__name:hover,
+		&__category:hover {
+			color: #34D186;
+			text-decoration-color: #34D186;
+		}
+
+		&__price-buy-btn {
+
+			button:hover {
+				background: #313131;
+			}
+		}
+	}	
+}
+
+.products-pagination {
+	margin-top: 34px;
+	@include flex(flex, row, 40px, center, center);
+
+	&__nav {
+		display: inline-block;
+		width: 128px;
+		padding: 15px 0 16px 0;
+
+		@include font(16px, 19px);
+		color: #313131;
+		font-weight: 500;
+		text-align: center;
+
+		border-radius: 10px;
+		background: #F4F4F4;
+
+		&_disabled {
+			color: #DCDCDC;
+
+			background: #F4F4F4;
+		}
+	}
+
+	&__pages {
+		@include flex(flex, row, 19px, center, flex-start);
+		
+		a {
+			@include font(16px, 19px);
+			color: #313131;
+			text-decoration: underline;
+			text-decoration-color: transparent;
+
+			transition: all 0.15s ease;
+		}
+	}
+}
+
+@media (hover: hover) {
+	.products-pagination {
+
+		&__pages {
+
+			a:hover {
+				color: #34D186;
+				text-decoration-color: #34D186;
+			}
+		}
+	}
+}
+
+
+
 .footer {
 	margin-top: 100px;
 
