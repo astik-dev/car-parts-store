@@ -3646,6 +3646,75 @@ h4 {
 
 
 
+.garage {
+	@include grid(grid, 190px 1fr 190px, 10px, stretch, stretch);
+	grid-template-rows: 50px;
+
+	button {
+		text-align: left;
+
+		border-radius: 10px;
+	}
+
+	&__my,
+	&__add {
+		position: relative;
+
+		padding: 0 44px 0 20px;
+
+		@include font(16px, 19px);
+		color: #FFF;
+		font-weight: 500;
+
+		&:after {
+			content: "";
+
+			position: absolute;
+			top: 15px;
+			right: 16px;
+
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+		}
+	}
+
+	&__my {
+		background: #313131;
+
+		&:after {
+			background: url("../img/arrow_white.svg") no-repeat;
+			background-size: 100% 100%;
+		}
+	}
+
+	&__car {
+		padding: 8px 18px;
+		background: #F4F4F4;
+
+		p:nth-child(1) {
+			@include font(14px, 17px);
+			color: #313131;
+		}
+		p:nth-child(2) {
+			margin-top: 2px;
+			@include font(12px, 14px);
+			color: #696969;
+		}
+	}
+
+	&__add {
+		background: #34D186;
+
+		&:after {
+			background: url("../img/plus.svg") no-repeat;
+			background-size: 100% 100%;
+		}
+	}
+}
+
+
+
 .footer {
 	margin-top: 100px;
 
