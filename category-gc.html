@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<title>Car parts store</title>
+
+		<meta charset="UTF-8">
+
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta name="format-detection" content="telephone=no">
+
+		<meta name="robots" content="noindex">
+	</head>
+	<body>
+
+		<header>
+
+			<div class="header__ad">
+				<div class="content-container">
+					<div class="header__ad-container">
+						<div class="header__ad-text-btn">
+							<p>У нас з’явились диски та шини!</p>
+							<a href="#">Обери прямо зараз</a>
+						</div>
+						<button class="header__ad-close" aria-label="Закрити" onClick="closeHeaderAd();"></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="header__top">
+				<div class="content-container">
+					<div class="header__top-container">
+						<div class="header__top-menu-tels-lang">
+							<nav class="header__top-menu">
+								<ul>
+									<li><a href="#">Запит по VIN</a></li>
+									<li><a href="#">Каталоги</a></li>
+									<li><a href="#">Доставка і оплата</a></li>
+									<li><a href="#">Корисна інформація</a></li>
+									<li><a href="#">Контакти</a></li>
+								</ul>
+							</nav>
+							<ul class="header__top-tels">
+								<li><a href="#">(096) 498-48-18</a></li>
+								<li><a href="#">(068) 373-43-60</a></li>
+								<li><a href="#">(050) 637-39-87</a></li>
+							</ul>
+							<div class="header__top-lang">
+								<span>UA</span>
+								<a href="#">RU</a>
+							</div>
+						</div>
+						<div class="header__top-cart">
+							<a href="#">Мій кошик <span>0</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="header__center">
+				<div class="content-container">
+					<div class="header__center-container">
+						<a href="index.html" class="header__center-logo">
+							<img src="img/logo.png" alt="Logo">
+						</a>
+						<div class="header__center-search">
+							<form action="#">
+								<input type="text" placeholder="Пошук за артикулом, наприклад ОС90">
+								<button aria-label="Пошук"></button>
+							</form>
+						</div>
+						<a href="#" class="header__center-account">
+							<img src="img/account.svg" alt="Аватар">
+							<span>Особистий кабінет</span>
+							<span>Привіт, <span>увійти</span></span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="header__bottom">
+				<div class="content-container">
+					<div class="header__bottom-container">
+						<div class="header__bottom-burger">
+							<button aria-label="Меню" onClick="burgerMenu();">
+								<span></span>
+								<span></span>
+								<span></span>
+							</button>
+						</div>
+						<div class="header__bottom-menu">
+							<ul>
+								<li>
+									<span>Запчастини для ТО</span>
+									<div class="header__bottom-menu-sub">
+										<div>
+											<span>Деталі для технічного обслуговування</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Ремінь ГРМ</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+											</ul>
+										</div>
+										<div>
+											<span>Гальмівні елементи</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li>
+									<span>Гальмівна система</span>
+									<div class="header__bottom-menu-sub">
+										<div>
+											<span>Гальмівні елементи</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Lorem ipsum dolor sit, amet consectetur, adipisicing elit.</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li>
+									<span>Підвіска та рульове</span>
+									<div class="header__bottom-menu-sub">
+										<div>
+											<span>Гальмівні елементи</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+											</ul>
+										</div>
+										<div>
+											<span>Гальмівні елементи</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+											</ul>
+										</div>
+										<div>
+											<span>Гальмівні елементи</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li>
+									<span>Коробка передач</span>
+									<div class="header__bottom-menu-sub">
+										<div>
+											<span>Гальмівні елементи</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+											</ul>
+										</div>
+										<div>
+											<span>Гальмівні елементи</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li>
+									<span>Двигун та ходова</span>
+									<div class="header__bottom-menu-sub header__bottom-menu-sub_right">
+										<div>
+											<span>Деталі для технічного обслуговування</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Ремінь ГРМ</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Ремінь ГРМ</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Ремінь ГРМ</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Ремінь ГРМ</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+											</ul>
+										</div>
+										<div>
+											<span>Гальмівні елементи</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+											</ul>
+										</div>
+										<div>
+											<span>Деталі для технічного обслуговування</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Ремінь ГРМ</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li>
+									<span>Паливна система</span>
+									<div class="header__bottom-menu-sub">
+										<div>
+											<span>Гальмівні елементи</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li>
+									<span>Вихлопна система</span>
+									<div class="header__bottom-menu-sub">
+										<div>
+											<span>Гальмівні елементи</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+											</ul>
+											<span>Елементи</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li>
+									<span>Електрика та освітлення</span>
+									<div class="header__bottom-menu-sub">
+										<div>
+											<span>Гальмівні елементи</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Ремінь ГРМ</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li>
+									<span>Кузовні елементи</span>
+									<div class="header__bottom-menu-sub header__bottom-menu-sub_right">
+										<div>
+											<span>Гальмівні елементи</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+											</ul>
+										</div>
+										<div>
+											<span>Гальмівні елементи</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+											</ul>
+											<span>Гальмівні елементи</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li>
+									<span>Охолодження та опалення</span>
+									<div class="header__bottom-menu-sub header__bottom-menu-sub_right">
+										<div>
+											<span>Гальмівні елементи</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+											</ul>
+										</div>
+										<div>
+											<span>Гальмівні елементи</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+											</ul>
+											<span>Гальмівні елементи</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+											</ul>
+										</div>
+										<div>
+											<span>Гальмівні елементи</span>
+											<ul>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+												<li><a href="#">Гальмівні колодки</a></li>
+												<li><a href="#">Гальмівні диски</a></li>
+												<li><a href="#">Свіча запалювання</a></li>
+												<li><a href="#">Комплект ременів ГРМ</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</header>
+
+		<main class="main">
+
+			<div>
+				<div class="content-container">
+					<ul class="breadcrumb">
+						<li><a href="#">Головна</a></li>
+						<li>Оливний фільтр</li>
+					</ul>
+				</div>
+			</div>
+
+			<section class="car-choice">
+				<div class="content-container">
+					<div class="car-choice__container car-choice__container_tabs2-only">
+						<h1>Оливний фільтр</h1>
+						<p class="p_18-21">Вибір автомобіля уможливлює показ тільки тих запчастин, які підходять до вашого автомобіля</p>
+						<div class="car-choice__tabs2">
+							<div class="car-choice__tabs2-btns">
+								<button onClick="swithTabs2(1, this);" data-text="Марка">Audi</button>
+								<button onClick="swithTabs2(2, this);" data-text="Модель" disabled>A8</button>
+								<button onClick="swithTabs2(3, this);" data-text="Рік випуску" disabled>Рік випуску</button>
+								<button onClick="swithTabs2(4, this);" data-text="Двигун" disabled>Двигун</button>
+								<button onClick="swithTabs2(5, this);" data-text="Модифікація" disabled>Модифікація</button>
+							</div>
+							<div class="car-choice__tabs2-content car-choice__tabs2-content_table6">
+								<button onclick="swithTabs2(2, this);">ACURA</button>
+								<button onclick="swithTabs2(2, this);">ALFA ROMEO</button>
+								<button onclick="swithTabs2(2, this);">AUDI</button>
+								<button onclick="swithTabs2(2, this);">BMW</button>
+								<button onclick="swithTabs2(2, this);">CHERY</button>
+								<button onclick="swithTabs2(2, this);">CHEVROLET</button>
+								<button onclick="swithTabs2(2, this);">CITROEN</button>
+								<button onclick="swithTabs2(2, this);">DACIA</button>
+								<button onclick="swithTabs2(2, this);">DAEWOO</button>
+								<button onclick="swithTabs2(2, this);">DAIHATSU</button>
+								<button onclick="swithTabs2(2, this);">FIAT</button>
+								<button onclick="swithTabs2(2, this);">FORD</button>
+								<button onclick="swithTabs2(2, this);">GEELY</button>
+								<button onclick="swithTabs2(2, this);">HONDA</button>
+								<button onclick="swithTabs2(2, this);">HUMMER</button>
+								<button onclick="swithTabs2(2, this);">HYUNDAI</button>
+								<button onclick="swithTabs2(2, this);">INFINITI</button>
+								<button onclick="swithTabs2(2, this);">JEEP</button>
+								<button onclick="swithTabs2(2, this);">KIA</button>
+								<button onclick="swithTabs2(2, this);">LADA</button>
+								<button onclick="swithTabs2(2, this);">LAND ROVER</button>
+								<button onclick="swithTabs2(2, this);">LEXUS</button>
+								<button onclick="swithTabs2(2, this);">MAZDA</button>
+								<button onclick="swithTabs2(2, this);">MERCEDES-BENZ</button>
+								<button onclick="swithTabs2(2, this);">MITSUBISHI</button>
+								<button onclick="swithTabs2(2, this);">MOSKVICH</button>
+								<button onclick="swithTabs2(2, this);">NISSAN</button>
+								<button onclick="swithTabs2(2, this);">OPEL</button>
+								<button onclick="swithTabs2(2, this);">PEUGEOT</button>
+								<button onclick="swithTabs2(2, this);">PORSCHE</button>
+								<button onclick="swithTabs2(2, this);">RENAULT</button>
+								<button onclick="swithTabs2(2, this);">SEAT</button>
+								<button onclick="swithTabs2(2, this);">SKODA</button>
+								<button onclick="swithTabs2(2, this);">SMART</button>
+								<button onclick="swithTabs2(2, this);">SSANGYONG</button>
+								<button onclick="swithTabs2(2, this);">SUBARU</button>
+								<button onclick="swithTabs2(2, this);">SUZUKI</button>
+								<button onclick="swithTabs2(2, this);">TOYOTA</button>
+								<button onclick="swithTabs2(2, this);">VOLVO</button>
+								<button onclick="swithTabs2(2, this);">VW</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="content-container">
+					<h2 class="pb-50">Найкращі пропозиції в категорії Оливний фільтр</h2>
+					<div class="products-grid-4">
+						<div class="product">
+							<a href="#" class="product__name">BOSCH 1 457 429 820</a>
+							<a href="#" class="product__image">
+								<img src="img/product/1.jpg" alt="BOSCH 1 457 429 820">
+							</a>
+							<a href class="product__category">Оливний фільтр</a>
+							<div class="product__price-buy-btn">
+								<p data-currency="грн">142</p>
+								<button>Купити</button>
+							</div>
+							<p class="product__term">Термін поставки: <span>1 день</span></p>
+						</div>
+						<div class="product">
+							<a href="#" class="product__name">BOSCH 0 451 102 056</a>
+							<a href="#" class="product__image product__image_no">
+								<img src="img/product/0.png" alt="BOSCH 0 451 102 056">
+							</a>
+							<a href class="product__category">Оливний фільтр</a>
+							<button class="product__check-btn">Уточнити</button>
+							<p class="product__term">Термін поставки: <span>-</span></p>
+						</div>
+						<div class="product">
+							<a href="#" class="product__name">BOSCH 0 451 103 316</a>
+							<a href="#" class="product__image">
+								<img src="img/product/2.jpg" alt="BOSCH 0 451 103 316">
+							</a>
+							<a href class="product__category">Оливний фільтр</a>
+							<div class="product__price-buy-btn">
+								<p data-currency="грн">146</p>
+								<button>Купити</button>
+							</div>
+							<p class="product__term">Термін поставки: <span>1 день</span></p>
+						</div>
+						<div class="product">
+							<a href="#" class="product__name">BOSCH 1 457 429 820</a>
+							<a href="#" class="product__image">
+								<img src="img/product/3.jpg" alt="BOSCH 1 457 429 820">
+							</a>
+							<a href class="product__category">Оливний фільтр</a>
+							<div class="product__price-buy-btn">
+								<p data-currency="грн">157</p>
+								<button>Купити</button>
+							</div>
+							<p class="product__term">Термін поставки: <span>1 день</span></p>
+						</div>
+						<div class="product">
+							<a href="#" class="product__name">BOSCH 1 457 429 820</a>
+							<a href="#" class="product__image">
+								<img src="img/product/4.jpg" alt="BOSCH 1 457 429 820">
+							</a>
+							<a href class="product__category">Оливний фільтр</a>
+							<div class="product__price-buy-btn">
+								<p data-currency="грн">159</p>
+								<button>Купити</button>
+							</div>
+							<p class="product__term">Термін поставки: <span>1 день</span></p>
+						</div>
+						<div class="product">
+							<a href="#" class="product__name">BOSCH 1 457 429 820</a>
+							<a href="#" class="product__image">
+								<img src="img/product/5.jpg" alt="BOSCH 1 457 429 820">
+							</a>
+							<a href class="product__category">Оливний фільтр</a>
+							<div class="product__price-buy-btn">
+								<p data-currency="грн">161</p>
+								<button>Купити</button>
+							</div>
+							<p class="product__term">Термін поставки: <span>1 день</span></p>
+						</div>
+						<div class="product">
+							<a href="#" class="product__name">BOSCH 1 457 429 820</a>
+							<a href="#" class="product__image">
+								<img src="img/product/6.jpg" alt="BOSCH 1 457 429 820">
+							</a>
+							<a href class="product__category">Оливний фільтр</a>
+							<div class="product__price-buy-btn">
+								<p data-currency="грн">163</p>
+								<button>Купити</button>
+							</div>
+							<p class="product__term">Термін поставки: <span>1 день</span></p>
+						</div>
+						<div class="product">
+							<a href="#" class="product__name">BOSCH 1 457 429 820</a>
+							<a href="#" class="product__image">
+								<img src="img/product/7.jpg" alt="BOSCH 1 457 429 820">
+							</a>
+							<a href class="product__category">Оливний фільтр</a>
+							<div class="product__price-buy-btn">
+								<p data-currency="грн">167</p>
+								<button>Купити</button>
+							</div>
+							<p class="product__term">Термін поставки: <span>1 день</span></p>
+						</div>
+						<div class="product">
+							<a href="#" class="product__name">BOSCH 1 457 429 820</a>
+							<a href="#" class="product__image">
+								<img src="img/product/8.jpg" alt="BOSCH 1 457 429 820">
+							</a>
+							<a href class="product__category">Оливний фільтр</a>
+							<div class="product__price-buy-btn">
+								<p data-currency="грн">124</p>
+								<button>Купити</button>
+							</div>
+							<p class="product__term">Термін поставки: <span>2 днi</span></p>
+						</div>
+						<div class="product">
+							<a href="#" class="product__name">BOSCH 1 457 429 820</a>
+							<a href="#" class="product__image">
+								<img src="img/product/9.jpg" alt="BOSCH 1 457 429 820">
+							</a>
+							<a href class="product__category">Оливний фільтр</a>
+							<div class="product__price-buy-btn">
+								<p data-currency="грн">161</p>
+								<button>Купити</button>
+							</div>
+							<p class="product__term">Термін поставки: <span>1 день</span></p>
+						</div>
+						<div class="product">
+							<a href="#" class="product__name">BOSCH 1 457 429 820</a>
+							<a href="#" class="product__image">
+								<img src="img/product/10.jpg" alt="BOSCH 1 457 429 820">
+							</a>
+							<a href class="product__category">Оливний фільтр</a>
+							<div class="product__price-buy-btn">
+								<p data-currency="грн">163</p>
+								<button>Купити</button>
+							</div>
+							<p class="product__term">Термін поставки: <span>1 день</span></p>
+						</div>
+						<div class="product">
+							<a href="#" class="product__name">BOSCH 1 457 429 820</a>
+							<a href="#" class="product__image">
+								<img src="img/product/11.jpg" alt="BOSCH 1 457 429 820">
+							</a>
+							<a href class="product__category">Оливний фільтр</a>
+							<div class="product__price-buy-btn">
+								<p data-currency="грн">167</p>
+								<button>Купити</button>
+							</div>
+							<p class="product__term">Термін поставки: <span>1 день</span></p>
+						</div>
+					</div>
+					<div class="products-pagination">
+						<span class="products-pagination__nav products-pagination__nav_disabled">Попередня</span>
+						<div class="products-pagination__pages">
+							<a href="#">1</a>
+							<a href="#">2</a>
+							<a href="#">3</a>
+							<a href="#">4</a>
+							<a href="#">5</a>
+							<span>...</span>
+							<a href="#">16</a>
+							<a href="#">17</a>
+							<a href="#">18</a>
+						</div>
+						<a href="#" class="products-pagination__nav">Наступна</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="contact-us pt-80_pb-70">
+				<div class="content-container">
+					<div class="contact-us__container">
+						<h2>Не маєте часу на пошук автозапчастин?</h2>
+						<p class="p_18-21">Напишіть нам і наші менеджери допоможуть вам!</p>
+						<a href="#">Підібрати запчастини</a>
+						<img src="img/2cars-man.png" alt="Background image">
+					</div>
+				</div>
+
+			</section>
+
+			<section class="text text_clr696969 pt-70">
+				<div class="content-container">
+					<h3>Як правильно купити запчастини?</h3>
+					<br>
+					<p>Рано чи пізно під час користування автомобілем його власник потребуватиме кузовних запчастин або якихось інших автозапчастин для заміни тих, що вийшли із ладу. Для їх придбання автолюбитель звертається або на СТО, або до товариша-фахівця. Однак в обох варіантах виникне переплата. Ще одним вирішенням є самостійна покупка необхідної запчастини. В такому випадку спрацює приказка: «Навіщо витрачати більше?». Якщо найближчим часом вас зацікавить пошук і продаж запчастин, то нижче ви зможете ознайомитися із короткою інструкцією з підбору та купівлі запчастин.</p>
+					<br>
+					<p>Де саме, і як купити запчастини для іномарок? Що краще: автобазар, звичайний магазин автозапчастин, або інтернет-магазин запчастин? Якщо у вас немає часу на роз`їзди по містом у пошуках необхідної запчастини, то в допомогу вам інтернет-магазин запчастин dok.ua, в якому є великий каталог запчастин. Оформивши замовлення, ви отримаєте максимально швидку його доставку. Якщо ж ви хочете купити запчастину не у віртуальному магазині, а, так би мовити, помацавши її, то вам або на автомобільний ринок, або ж у звичайний магазин чи автосервіс.</p>
+					<br>
+					<h4>Розпишемо ситуацію на прикладі, вважаючи що ви - власник автомобіля Mercedes:</h4>
+					<br>
+					<ul>
+						<li>Оригінальні запчастини завжди мають своє маркування і фірмову упаковку. А також завжди ідентифікуються за своїм каталожним номером</li>
+						<li>Запчастини слід купувати тільки там, де на вашу покупку дадуть гарантію. А у разі виявлення браку буде кому виставити претензію</li>
+						<li>Завжди необхідно давати оцінку продавцеві, не важливо - це інтернет-магазин запчастин, або ж торговий кіоск на ринку</li>
+					</ul>
+					<br>
+					<h4>Перш за все, звертайте увагу на асортимент запчастин і професійну компетентність продавця або консультанта:</h4>
+					<br>
+					<ol>
+						<li>Якщо ж у процесі підбору запчастин у Вас виникли будь-які сумніви, то варто відмовитися від покупки в цьому місці</li>
+						<li>Ви повинні розуміти, що у разі виникнення у продавця труднощів із підбору запчастин на ваш автомобіль за номером кузова (VIN-коду) є велика ймовірність того, що куплена запчастини не підійде для вашого авто</li>
+					</ol>
+					<br>
+					<p>Велику популярність в частині продажу запчастин отримали online-ресурси, серед них і наш - <a href="#">інтернет-магазин</a> запчастин. Для наших клієнтів ми вирішили не тільки задачу в простій і зручній купівлі запчастин, а й подбали про їх оперативну доставку на всій території України. Користуючись сайтом інтернет-магазину, ви зможете підібрати потрібні вам запчастини того чи іншого виробника, виходячи з марки вашого автомобіля, його моделі, модифікації, року випуску і ціни, яку ви готові заплатити.</p>
+					<br>
+					<p>Купуючи запчастини в інтернеті, завжди цікавтеся можливістю їх обміну або ж повернення. Серйозний інтернет-магазин запчастин завжди захистить інтереси свого покупця.</p>
+					<p class="links_separator">
+						<a href="#">Купити автозапчастини</a>
+						<a href="#">Продаж запчастин</a>
+						<a href="#">Автозапчастини</a>
+						<a href="#">Авто запчастини</a>
+						<a href="#">Запчастини</a>
+						<a href="#">Автозапчастини Київ</a>
+						<a href="#">Запчастини Київ</a>
+						<a href="#">Запчастини для іномарок</a>
+						<a href="#">Інтернет магазин автозапчастин</a>
+						<a href="#">Кузовні запчастини</a>
+						<a href="#">Автозапчастини для іномарок</a>
+						<a href="#">Інтернет магазин запчастин</a>
+						<a href="#">Автозапчастини Україна</a>
+						<a href="#">Магазин автозапчастин</a>
+						<a href="#">Каталог запчастин</a>
+						<a href="#">Купити запчастини</a>
+					</p>
+					<br>
+					<p class="links_clr989898 links_separator">
+						<a href="#">Київ</a>
+						<a href="#">Харків</a>
+						<a href="#">Одеса</a>
+						<a href="#">Дніпро</a>
+						<a href="#">Запоріжжя</a>
+						<a href="#">Львів</a>
+						<a href="#">Кривий Ріг</a>
+						<a href="#">Миколаїв</a>
+						<a href="#">Маріуполь</a>
+						<a href="#">Вінниця</a>
+						<a href="#">Херсон</a>
+						<a href="#">Чернігів</a>
+						<a href="#">Полтава</a>
+						<a href="#">Черкаси</a>
+						<a href="#">Хмельницький</a>
+						<a href="#">Суми</a>
+						<a href="#">Житомир</a>
+						<a href="#">Чернівці</a>
+						<a href="#">Рівне</a>
+						<a href="#">Кам'янське</a>
+						<a href="#">Кропивницький</a>
+						<a href="#">Івано-Франківськ</a>
+						<a href="#">Кременчук</a>
+						<a href="#">Тернопіль</a>
+						<a href="#">Луцьк</a>
+						<a href="#">Біла Церква</a>
+						<a href="#">Коростень</a>
+						<a href="#">Краматорськ</a>
+						<a href="#">Мелітополь</a>
+						<a href="#">Нікополь</a>
+						<a href="#">Ужгород</a>
+						<a href="#">Бердянськ</a>
+						<a href="#">Курахове</a>
+						<a href="#">Волноваха</a>
+						<a href="#">Павлоград</a>
+						<a href="#">Конотоп</a>
+						<a href="#">Первомайськ</a>
+						<a href="#">Вознесенськ</a>
+						<a href="#">Умань</a>
+						<a href="#">Бориспіль</a>
+						<a href="#">Кам'янець-Подільський</a>
+						<a href="#">Чорноморськ</a>
+						<a href="#">Мелітополь</a>
+						<a href="#">Прилуки</a>
+						<a href="#">Мукачево</a>
+						<a href="#">Слов'янськ</a>
+						<a href="#">Білгород-Дністровський</a>
+						<a href="#">Нова Каховка</a>
+						<a href="#">Покровськ</a>
+						<a href="#">Костянтинівка</a>
+						<a href="#">Бахмут</a>
+						<a href="#">Сєверодонецьк</a>
+						<a href="#">Бровари</a>
+					</p>
+				</div>
+			</section>
+
+		</main>
+
+		<footer class="footer">
+			<div class="content-container">
+				<div class="footer__container">
+
+					<div class="footer__tels">
+						<p class="footer__title">Підбір запчастин</p>
+						<div class="footer__tels-items">
+							<a href="#">
+								<span class="icon icon-viber"></span>
+								<span>(096) 498-48-18</span>
+							</a>
+							<a href="#">
+								<span class="icon icon-vodafone"></span>
+								<span>(068) 373-43-60</span>
+							</a>
+							<a href="#">
+								<span class="icon icon-lifecell"></span>
+								<span>(050) 637-39-87</span>
+							</a>
+						</div>
+					</div>
+
+					<div class="footer__time-info">
+						<div class="footer__time">
+							<p class="footer__title">Часи роботи</p>
+							<p>Пн - Сб:  08:00 - 19:00<br><br>Нд: 09:00 - 15:00</p>
+						</div>
+						<div class="footer__info">
+							<p class="footer__title">Інформація</p>
+							<div class="footer__links">
+								<a href="#">Угода користувача</a>
+								<a href="#">Політика конфіденційності</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="footer__clients">
+						<p class="footer__title">Клієнтам</p>
+						<div class="footer__links">
+							<a href="#">Запит по VIN</a>
+							<a href="#">Каталоги</a>
+							<a href="#">Доставка і оплата</a>
+							<a href="#">Корисна інформація</a>
+							<a href="#">Контакти</a>
+						</div>
+					</div>
+
+					<div class="footer__payment">
+						<p class="footer__title">Оплата</p>
+						<div class="footer__payment-items">
+							<span class="icon icon-visa"></span>
+							<span class="icon icon-mastercard"></span>
+							<span class="icon icon-google-pay"></span>
+							<span class="icon icon-apple-pay"></span>
+							<span class="icon icon-liqpay"></span>
+						</div>
+					</div>
+
+					<div class="footer__logo-copy-socials">
+						<img class="footer__logo" src="img/logo.png" alt="Logo">
+						<p class="footer__copy">Copyright © 2010-2023 «GCAR.PARTS»</p>
+						<div class="footer__socials">
+							<a href="#" aria-label="Facebook" class="icon icon-socials icon-socials-facebook"></a>
+							<a href="#" aria-label="Instagram" class="icon icon-socials icon-socials-instagram"></a>
+							<a href="#" aria-label="YouTube" class="icon icon-socials icon-socials-youtube"></a>
+							<a href="#" aria-label="Skype" class="icon icon-socials icon-socials-skype"></a>
+							<a href="#" aria-label="Telegram" class="icon icon-socials icon-socials-telegram">></a>
+							<a href="#" aria-label="Viber" class="icon icon-socials icon-socials-viber"></a>
+							<a href="#" aria-label="Messanger" class="icon icon-socials icon-socials-messenger"></a>
+							<a href="#" aria-label="WhatsApp" class="icon icon-socials icon-socials-whatsapp"></a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</footer>
+		
+		<script src="js/script.js"></script>
+	</body>
+</html>
