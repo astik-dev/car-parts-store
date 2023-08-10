@@ -3290,6 +3290,8 @@ h4 {
 .product {
 	$anim: all 0.15s ease;
 
+	display: grid;
+	grid-template-rows: auto auto 1fr;
 	padding: 27px 32px 32px 32px;
 
 	border-radius: 16px;
@@ -3301,7 +3303,7 @@ h4 {
 	}
 
 	&__name,
-	&__category {
+	&__category a {
 		@include font(16px, 22px);
 		color: #313131;
 		text-decoration: underline;
@@ -3399,7 +3401,7 @@ h4 {
 		}
 
 		&__name:hover,
-		&__category:hover {
+		&__category a:hover {
 			color: #34D186;
 			text-decoration-color: #34D186;
 		}

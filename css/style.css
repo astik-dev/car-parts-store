@@ -3052,6 +3052,10 @@ h4 {
 	}
 }
 .product {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-rows: auto auto 1fr;
+	grid-template-rows: auto auto 1fr;
 	padding: 27px 32px 32px 32px;
 	border-radius: 16px;
 	-webkit-transition: all 0.3s ease;
@@ -3060,7 +3064,7 @@ h4 {
 .product__name {
 	font-weight: 500;
 }
-.product__name, .product__category {
+.product__name, .product__category a {
 	font-size: 16px;
 	line-height: 22px;
 	color: #313131;
@@ -3169,7 +3173,7 @@ h4 {
 		-webkit-box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.14);
 		        box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.14);
 	}
-	.product__name:hover, .product__category:hover {
+	.product__name:hover, .product__category a:hover {
 		color: #34D186;
 		text-decoration-color: #34D186;
 	}
