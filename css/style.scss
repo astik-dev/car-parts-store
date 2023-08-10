@@ -3539,6 +3539,9 @@ h4 {
 .category-car-model {
 	position: relative;
 
+	display: grid;
+	justify-items: start;
+	grid-template-rows: auto 1fr auto;
 	padding: 19px 17px 27px 19px;
 
 	border-radius: 16px;
@@ -3567,6 +3570,7 @@ h4 {
 		position: relative;
 		z-index: 2;
 
+		justify-self: stretch;
 		@include flex(flex, row, 20px, center, stretch);
 		padding: 0 20px 0 2px;
 
@@ -3693,11 +3697,15 @@ h4 {
 		padding: 8px 18px;
 		background: #F4F4F4;
 
-		p:nth-child(1) {
+		span {
+			display: block;
+		}
+
+		span:nth-child(1) {
 			@include font(14px, 17px);
 			color: #313131;
 		}
-		p:nth-child(2) {
+		span:nth-child(2) {
 			margin-top: 2px;
 			@include font(12px, 14px);
 			color: #696969;

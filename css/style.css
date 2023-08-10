@@ -3331,6 +3331,11 @@ h4 {
 }
 .category-car-model {
 	position: relative;
+	display: -ms-grid;
+	display: grid;
+	justify-items: start;
+	-ms-grid-rows: auto 1fr auto;
+	grid-template-rows: auto 1fr auto;
 	padding: 19px 17px 27px 19px;
 	border-radius: 16px;
 	-webkit-transition: all 0.3s ease;
@@ -3353,6 +3358,8 @@ h4 {
 .category-car-model__img-title {
 	position: relative;
 	z-index: 2;
+	-ms-grid-column-align: stretch;
+	    justify-self: stretch;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -3481,12 +3488,15 @@ h4 {
 	padding: 8px 18px;
 	background: #F4F4F4;
 }
-.garage__car p:nth-child(1) {
+.garage__car span {
+	display: block;
+}
+.garage__car span:nth-child(1) {
 	font-size: 14px;
 	line-height: 17px;
 	color: #313131;
 }
-.garage__car p:nth-child(2) {
+.garage__car span:nth-child(2) {
 	margin-top: 2px;
 	font-size: 12px;
 	line-height: 14px;
