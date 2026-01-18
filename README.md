@@ -2,9 +2,9 @@
 
 `Freelance project`
 
-### Description:
-**Car Parts Store** is a freelance project in which I created 9 responsive pages for an online store based on a *Figma* design.  
-#### Links:
+**Car parts store** is a responsive 9-page online store implemented using HTML, SCSS, and JavaScript, based on a Figma design.
+
+## Pages
 1. https://astik-dev.github.io/car-parts-store/
 1. https://astik-dev.github.io/car-parts-store/category-gc.html
 1. https://astik-dev.github.io/car-parts-store/marka-gc.html
@@ -15,9 +15,8 @@
 1. https://astik-dev.github.io/car-parts-store/art_brand-gc.html
 1. https://astik-dev.github.io/car-parts-store/model-gc.html
 
-### Functional:
-1. Hide menu and show hamburger menu for mobile screens.
-1. OwlCarousel2 slider.
-1. Hovering the mouse over interactive elements adds animated effects.
-1. Tabs.
-1. Responsiveness for different screen sizes.
+## Features
+- Hamburger menu for mobile screens
+- OwlCarousel2 slider
+- Tabs
+- Hover animations on interactive elements
